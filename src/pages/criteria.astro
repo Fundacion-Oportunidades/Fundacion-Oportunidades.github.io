@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Criterios de valoración">
+  <section class="criteria-container">
+    <h1>Criterios de Selección de becarios</h1>
+    <ul>
+      <li>
+        <h2>Primer criterio:</h2>
+        <p>
+          Rendimiento académico en el colegio. Se realiza una primera selección
+          en base al rendimiento académico de todos los solicitantes de una
+          beca.
+        </p>
+      </li>
+      <li>
+        <h2>Segundo criterio:</h2>
+        <p>
+          Imposibilidad de acceder a educación universitaria privada por medios
+          propios. Es decir, no contar con recursos económicos para afrontar el
+          estudio.
+        </p>
+      </li>
+    </ul>
+  </section>
+</Layout>
+
+<style>
+  .criteria-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+    margin-top: 2rem;
+  }
+
+  .criteria-container h1 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  .criteria-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .criteria-container li {
+    margin-bottom: 2rem;
+  }
+
+  .criteria-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .criteria-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+</style>

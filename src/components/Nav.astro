@@ -1,0 +1,123 @@
+---
+import type { MenuItem } from "../types/types";
+import menuItems from "../data/menuItems";
+
+interface Props extends MenuItem {}
+// const { title, options } = Astro.props;
+---
+
+<nav>
+  <div class="logo-container">
+    <a href="/">
+      <img
+        src="https://res.cloudinary.com/dsblswewr/image/upload/v1685354115/oportunidades_logo_tkgaex.png"
+        alt="logo fundación oportunidades"
+        height="60px"
+      />
+    </a>
+  </div>
+  <ul class="right-container">
+    {
+      menuItems.map((i) => (
+        <li class="main_option">
+          {i.title}
+          <ul>
+            {i.options.map((o) => (
+              <li>
+                <a href={o.url}>{o.title}</a>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .main_option {
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mueve la imagen a la izquierda y los elementos del menú a la derecha */
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 90vw;
+    margin-right: 5rem;
+    padding-left: 5rem;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .right-container {
+    margin-right: 5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Cambia el flujo de los elementos a una fila */
+  }
+
+  nav li {
+    position: relative;
+    margin-right: 20px; /* Aumenta el espacio entre los elementos del menú */
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+  }
+
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* font-weight: 200; */
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid green;
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  nav ul ul li {
+    display: block;
+    background-color: black;
+    top: 100%;
+    width: auto;
+    background-color: white;
+    padding: 10px;
+    /* white-space: nowrap; */
+  }
+
+  nav li:hover > ul {
+    display: block;
+  }
+
+  nav li:hover {
+    color: green;
+  }
+
+  nav li a:hover {
+    transform: scale(1.1, 1.1);
+    /* font-weight: bold; */
+    color: green;
+  }
+
+  .nav-links {
+    margin-left: 16rem;
+  }
+</style>

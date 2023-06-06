@@ -1,0 +1,85 @@
+<section class="companies-container">
+  <p>Empresas que confían en nosotros y en nuestros becados:</p>
+  <div class="empresas-logos">
+    <a href="https://www.nintendo.com/" target="_blank">
+      <img
+        src="https://th.bing.com/th/id/OIP.1TqxG3NcgORCPOiJh4ooYQHaFg?pid=ImgDet&rs=1"
+        alt="Logo Empresa 1"
+      />
+    </a>
+    <a href="https://www.samsung.com/ar/" target="_blank">
+      <img
+        src="https://th.bing.com/th/id/OIP.B3hD0W7zukV_UmB5o27skwHaHa?pid=ImgDet&rs=1"
+        alt="Logo Empresa 2"
+      />
+    </a>
+    <a href="https://www.microsoft.com/es-ar/" target="_blank">
+      <img
+        src="https://th.bing.com/th/id/OIP.6SJkjhoPf3zDP6t30MxbJAHaEK?pid=ImgDet&rs=1"
+        alt="Logo Empresa 3"
+      />
+    </a>
+  </div>
+  <div class="empresas-donante">
+    <a href="https://www.mercadopago.com/" target="_blank">
+      <button>Sumate como donante</button>
+    </a>
+  </div>
+</section>
+
+<style>
+  .companies-container {
+    text-align: center;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 80ch;
+  }
+
+  img {
+    opacity: 0.8;
+  }
+
+  button {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    height: 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .empresas-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .empresas-logos img {
+    padding: 1rem;
+    max-height: 6rem;
+    display: inline;
+    transition: transform 0.3s; /* Animación de transformación */
+  }
+
+  .empresas-logos img:hover {
+    opacity: 1;
+    transform: scale(
+      1.1,
+      1.1
+    ); /* Aumenta el tamaño en un 5% al posarse sobre ellas */
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>

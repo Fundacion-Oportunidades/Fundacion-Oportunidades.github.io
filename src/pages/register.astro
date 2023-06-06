@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Formulario de Registro">
+  <form action="/enviar" method="post">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Ingrese su nombre"
+        required
+      />
+    </div>
+    <div>
+      <label for="correo">Correo Electrónico:</label>
+      <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="Ingrese su correo electrónico"
+        required
+      />
+    </div>
+    <div>
+      <label for="pais">País de Interés:</label>
+      <input
+        type="text"
+        id="pais"
+        name="pais"
+        placeholder="Ingrese el país de interés"
+        required
+      />
+    </div>
+    <div>
+      <label for="universidad">Universidad de Interés:</label>
+      <input
+        type="text"
+        id="universidad"
+        name="universidad"
+        placeholder="Ingrese la universidad de interés"
+        required
+      />
+    </div>
+    <div>
+      <label for="motivacion">Motivación:</label>
+      <textarea
+        id="motivacion"
+        name="motivacion"
+        rows="5"
+        cols="30"
+        placeholder="Explique su motivación para estudiar en el extranjero"
+        required></textarea>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</Layout>
+
+<style>
+  form {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(34, 139, 34, 0.6); /* Tonalidad de verde en el box shadow */
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    width: 8rem;
+    height: 2rem;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049; /* Tonalidad de verde en el hover */
+  }
+</style>

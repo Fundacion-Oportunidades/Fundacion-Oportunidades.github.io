@@ -1,0 +1,136 @@
+<div class="testimonials-container">
+  <input type="radio" name="testimonial" id="testimonial1" checked />
+  <input type="radio" name="testimonial" id="testimonial2" />
+  <input type="radio" name="testimonial" id="testimonial3" />
+
+  <section class="testimonial">
+    <div class="testimonial-image">
+      <img
+        src="https://argentinosenirlanda.ie/wp-content/uploads/2017/04/Renovar-la-visa-de-estudiante-en-Irlanda.jpg"
+        alt="Foto de la persona"
+        height="10rem"
+      />
+    </div>
+    <div class="testimonial-text">
+      <p>
+        "No puedo expresar con palabras lo agradecido que estoy por esta
+        experiencia y por el apoyo que me han brindado. La beca de la Fundación
+        Oportunidades ha sido un verdadero regalo que ha cambiado mi vida para
+        siempre."
+      </p>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="testimonial-image">
+      <img
+        src="https://th.bing.com/th/id/R.a706a6041628b488e055dfe8f1fb0096?rik=JF0DoU1HKkHrMQ&pid=ImgRaw&r=0"
+        alt="Foto de la persona"
+        height="10rem"
+      />
+    </div>
+    <div class="testimonial-text">
+      <p>
+        "Estoy muy agradecido por la oportunidad que me han brindado. Gracias a
+        la Fundación Oportunidades, he logrado alcanzar mis metas y superar mis
+        expectativas. Esta experiencia ha sido transformadora."
+      </p>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="testimonial-image">
+      <img
+        src="https://cookco.us/news/wp-content/uploads/2020/11/college-student.jpg"
+        alt="Foto de la persona"
+        height="10rem"
+      />
+    </div>
+    <div class="testimonial-text">
+      <p>
+        "No puedo agradecer lo suficiente a la Fundación Oportunidades por esta
+        increíble oportunidad. Mi vida ha cambiado de manera significativa
+        gracias a su apoyo y dedicación. Estoy emocionado por lo que el futuro
+        me depara."
+      </p>
+    </div>
+  </section>
+</div>
+
+<style>
+  .testimonials-container {
+    /* height: 20vh; */
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .image-testimonial {
+    /* height: 15rem; */
+  }
+
+  .testimonial {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f2f2f2;
+  }
+
+  .testimonial-image {
+    max-width: 100%;
+    margin-right: 20px;
+  }
+
+  .testimonial-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .testimonial-text {
+    flex-grow: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .testimonial-radios {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .testimonial-radios label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .testimonial-radios label:hover {
+    background-color: #999;
+  }
+
+  #testimonial1:checked ~ .testimonial:nth-of-type(1),
+  #testimonial2:checked ~ .testimonial:nth-of-type(2),
+  #testimonial3:checked ~ .testimonial:nth-of-type(3) {
+    display: flex;
+  }
+
+  #testimonial1:checked ~ .testimonial-radios label:nth-of-type(1),
+  #testimonial2:checked ~ .testimonial-radios label:nth-of-type(2),
+  #testimonial3:checked ~ .testimonial-radios label:nth-of-type(3) {
+    background-color: #999;
+  }
+</style>
