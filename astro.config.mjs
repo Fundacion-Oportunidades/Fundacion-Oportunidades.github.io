@@ -2,7 +2,11 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/",
+  base: "/site/",
   site: "https://fundacion-oportunidades.github.io/site/",
   trailingSlash: "never",
+  routes: {
+    "/site/": "./src/pages/index.astro",
+    "/site/about_us/": "./src/pages/about_us.astro",
+  },
 });

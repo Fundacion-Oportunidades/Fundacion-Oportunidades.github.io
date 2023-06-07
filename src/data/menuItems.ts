@@ -1,18 +1,20 @@
+import type { MenuItem } from "../types/types";
+
 const menuItems: MenuItem[] = [
   {
     title: "La fundación",
     options: [
       {
         title: "Sobre nosotros",
-        url: "/about_us",
+        url: "/site/about_us",
       },
       {
         title: "Consejo asesor",
-        url: "/council",
+        url: "/site/council",
       },
       {
         title: "Equipo",
-        url: "/team",
+        url: "/site/team",
       },
     ],
   },
@@ -21,27 +23,27 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Presentación",
-        url: "/presentation",
+        url: "/site/presentation",
       },
       {
         title: "Cómo solicitar becas",
-        url: "/how_to",
+        url: "/site/how_to",
       },
       {
         title: "Cómo trabajamos",
-        url: "/how_we_work",
+        url: "/site/how_we_work",
       },
       {
         title: "Criterios de valoración",
-        url: "/criteria",
+        url: "/site/criteria",
       },
       {
         title: "Becas disponibles",
-        url: "/scholarships",
+        url: "/site/scholarships",
       },
       {
         title: "Preguntas frecuentes",
-        url: "/FAQ",
+        url: "/site/FAQ",
       },
     ],
   },
@@ -50,15 +52,15 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Presentación",
-        url: "/presentation",
+        url: "/site/presentation",
       },
       {
         title: "Oportunidades de Networking",
-        url: "/networking",
+        url: "/site/networking",
       },
       {
         title: "Oportunidades de Trabajo",
-        url: "/job_openings",
+        url: "/site/job_openings",
       },
     ],
   },
@@ -67,7 +69,7 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Contactanos",
-        url: "/contact_us",
+        url: "/site/contact_us",
       },
     ],
   },
