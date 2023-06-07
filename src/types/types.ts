@@ -28,3 +28,10 @@ export interface Universities {
   imageAlt: string;
   url: string;
 }
+
+export interface SocialMediaTypes {
+  imageUrlActive: string;
+  imageUrlInactive: string;
+  url: string;
+  imageAlt: string;
+}

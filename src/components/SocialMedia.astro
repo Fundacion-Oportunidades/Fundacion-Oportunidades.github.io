@@ -1,50 +1,25 @@
+---
+import type { SocialMediaTypes } from "../types/types";
+import socialMediaItems from "../data/socialMedia";
+
+interface Props extends SocialMediaTypes {}
+---
+
 <section class="social-media-container">
   <ul>
-    <li>
-      <a href="https://www.facebook.com" target="_blank"
-        ><img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685355460/face_gris_ifzgrs.png"
-          alt="Facebook"
-          class="social-icon facebook"
-        /></a
-      >
-    </li>
-    <li>
-      <a href="https://www.twitter.com" target="_blank"
-        ><img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/twitter_gris_bcfe4m.png"
-          alt="Twitter"
-          class="social-icon twitter"
-        /></a
-      >
-    </li>
-    <li>
-      <a href="https://www.youtube.com" target="_blank"
-        ><img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/youtube_gris_whvrro.png"
-          alt="YouTube"
-          class="social-icon youtube"
-        /></a
-      >
-    </li>
-    <li>
-      <a href="https://www.linkedin.com" target="_blank"
-        ><img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/ln_gris_k1nap3.png"
-          alt="LinkedIn"
-          class="social-icon linkedin"
-        /></a
-      >
-    </li>
-    <li>
-      <a href="https://www.instagram.com" target="_blank"
-        ><img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685355460/insta_gris_xcva8o.png"
-          alt="Instagram"
-          class="social-icon instagram"
-        /></a
-      >
-    </li>
+    {
+      socialMediaItems.map((s) => (
+        <li>
+          <a href={s.url} target="_blank">
+            <img
+              src={s.imageUrlInactive}
+              alt={s.imageAlt}
+              class={`social-icon ${s.imageAlt}`}
+            />
+          </a>
+        </li>
+      ))
+    }
   </ul>
   <div class="button-container">
     <a href="/register">
