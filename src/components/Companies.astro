@@ -1,24 +1,20 @@
+---
+import type { Companies } from "../types/types";
+import companies from "../data/companies";
+
+interface Props extends Companies {}
+---
+
 <section class="companies-container">
   <p>Empresas que confían en nosotros y en nuestros becados:</p>
   <div class="empresas-logos">
-    <a href="https://www.nintendo.com/" target="_blank">
-      <img
-        src="https://th.bing.com/th/id/OIP.1TqxG3NcgORCPOiJh4ooYQHaFg?pid=ImgDet&rs=1"
-        alt="Logo Empresa 1"
-      />
-    </a>
-    <a href="https://www.samsung.com/ar/" target="_blank">
-      <img
-        src="https://th.bing.com/th/id/OIP.B3hD0W7zukV_UmB5o27skwHaHa?pid=ImgDet&rs=1"
-        alt="Logo Empresa 2"
-      />
-    </a>
-    <a href="https://www.microsoft.com/es-ar/" target="_blank">
-      <img
-        src="https://th.bing.com/th/id/OIP.6SJkjhoPf3zDP6t30MxbJAHaEK?pid=ImgDet&rs=1"
-        alt="Logo Empresa 3"
-      />
-    </a>
+    {
+      companies.map((c) => (
+        <a href={c.url} target="_blank">
+          <img src={c.imageUrl} alt={c.imageAlt} />
+        </a>
+      ))
+    }
   </div>
   <div class="empresas-donante">
     <a href="https://www.mercadopago.com/" target="_blank">

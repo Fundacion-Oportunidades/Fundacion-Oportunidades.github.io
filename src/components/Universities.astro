@@ -1,26 +1,22 @@
+---
+import type { Universities } from "../types/types";
+import universities from "../data/universities";
+
+interface Props extends Universities {}
+---
+
 <section class="universities-container">
   <p>Universidades que ponen sus becas a disposición:</p>
   <div class="universidades-logos">
-    <a href="https://www.dcu.ie/" target="_blank">
-      <img
-        src="https://th.bing.com/th/id/OIP.CLPC-2bSt7CUlMH2A9DsXQHaHa?pid=ImgDet&rs=1"
-        alt="Logo Universidad 3"
-      />
-    </a>
-    <a href="https://www.ul.ie/" target="_blank">
-      <img
-        src="https://www.ul.ie/themes/custom/ul/logo.jpg"
-        alt="Logo Universidad 1"
-      />
-    </a>
-    <a href="https://www.ucd.ie/" target="_blank">
-      <img
-        src="https://www.dcu.ie/sites/default/files/institute_education_access/2022-09/low-qual-logo_0.png"
-        alt="Logo Universidad 2"
-      />
-    </a>
+    {
+      universities.map((u) => (
+        <a href={u.url} target="_blank">
+          <img src={u.imageUrl} alt={u.imageAlt} />
+        </a>
+      ))
+    }
   </div>
-  <a href="/work_with_us_universities">
+  <a href="/site/work_with_us_universities">
     <button>Sumate a cambiarle la realidad a una persona</button>
   </a>
 </section>
