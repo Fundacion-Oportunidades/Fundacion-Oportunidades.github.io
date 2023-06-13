@@ -15,6 +15,7 @@ export interface Testimonials {
   imageUrl: string;
   imageAlt: string;
   text: string;
+  signature: string;
 }
 
 export interface Companies {
@@ -34,4 +35,10 @@ export interface SocialMediaTypes {
   imageUrlInactive: string;
   url: string;
   imageAlt: string;
+}
+
+export interface Mission {
+  title: string;
+  imageUrl: string;
+  paragraphs: string[];
 }

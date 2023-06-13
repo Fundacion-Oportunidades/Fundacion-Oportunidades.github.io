@@ -1,61 +1,68 @@
 ---
 import type { MenuItem } from "../types/types";
 import menuItems from "../data/menuItems";
+import OfferHead from "./OfferHead.astro";
 
 interface Props extends MenuItem {}
 ---
 
-<nav>
-  <div class="logo-container">
-    <a href="/site">
-      <img
-        src="https://res.cloudinary.com/dsblswewr/image/upload/v1685354115/oportunidades_logo_tkgaex.png"
-        alt="logo fundación oportunidades"
-        height="60px"
-      />
-    </a>
-  </div>
-  <ul class="right-container">
-    {
-      menuItems.map((i) => (
-        <li class="main_option">
-          {i.title}
-          <ul>
-            {i.options.map((o) => (
-              <li>
-                <a href={o.url}>{o.title}</a>
-              </li>
-            ))}
-          </ul>
-        </li>
-      ))
-    }
-  </ul>
-</nav>
+<header>
+  <OfferHead />
+  <nav>
+    <div class="logo-container">
+      <a href="/site">
+        <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685354115/oportunidades_logo_tkgaex.png"
+          alt="logo fundación oportunidades"
+          height="60px"
+        />
+      </a>
+    </div>
+    <ul class="right-container">
+      {
+        menuItems.map((i) => (
+          <li class="main_option">
+            {i.title}
+            <ul>
+              {i.options.map((o) => (
+                <li>
+                  <a href={o.url}>{o.title}</a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
 
 <style>
   .main_option {
     font-weight: bold;
   }
 
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f2f2f2;
-    padding: 10px;
-    width: 90vw;
-    margin-right: 5rem;
-    padding-left: 5rem;
-    /* position: fixed; */
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #f2f2f2d6;
+    padding: 1rem;
+  }
+
+  nav:hover {
+    background-color: white;
   }
 
   .logo-container {
     display: flex;
     align-items: center;
+    margin-left: 5rem;
   }
 
   .right-container {

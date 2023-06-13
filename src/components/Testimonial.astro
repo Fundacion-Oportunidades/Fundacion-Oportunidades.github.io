@@ -1,104 +1,62 @@
 ---
-import type { Testimonials } from "../types/types";
-import testimonials from "../data/testimonials";
-
-interface Props extends Testimonials {}
+const { imageUrl, imageAlt, text, signature } = Astro.props;
 ---
 
-<div class="testimonials-container">
-  <input type="radio" name="testimonial" id="testimonial1" checked />
-  <input type="radio" name="testimonial" id="testimonial2" />
-  <input type="radio" name="testimonial" id="testimonial3" />
-
-  {
-    testimonials.map((t) => (
-      <section class="testimonial">
-        <div class="testimonial-image">
-          <img src={t.imageUrl} alt={t.imageAlt} height="10rem" />
-        </div>
-
-        <div class="testimonial-text">
-          <p>{t.text}</p>
-        </div>
-      </section>
-    ))
-  }
-</div>
+<section class="testimonials-container">
+  <div class="testimonial">
+    <img src={imageUrl} alt={imageAlt} class="testimonial-image" />
+    <span class="testimonial-text-container">
+      <p class="testimonial-text">{text}</p>
+      <p class="testimonial-signature">{signature}</p>
+    </span>
+  </div>
+</section>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sauce+Sans&display=swap");
+
   .testimonials-container {
-    /* height: 20vh; */
-    width: 60vw;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
+    display: flex;
+    margin: 2rem;
+    border-radius: 0 2rem 0 2rem;
+    width: 90vw;
+    background-color: #efefef;
+    transition: all 0.3s ease;
   }
 
-  .image-testimonial {
-    /* height: 15rem; */
+  .testimonials-container:hover {
+    box-shadow: 0px 8px 16px 0px #7bcb79;
   }
 
   .testimonial {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #f2f2f2;
   }
 
   .testimonial-image {
-    max-width: 100%;
-    margin-right: 20px;
+    width: 40rem;
+    border-radius: 0 0 0 2rem;
   }
 
-  .testimonial-image img {
-    max-width: 100%;
-    height: auto;
+  .testimonial-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .testimonial-text {
-    flex-grow: 1;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 3rem 0 3rem;
+    font-family: "Open Sauce Sans", sans-serif;
     font-style: italic;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 1rem 0 1rem 0;
+    line-height: 4rem;
   }
-
-  .testimonial-radios {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .testimonial-radios label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-
-  .testimonial-radios label:hover {
-    background-color: #999;
-  }
-
-  #testimonial1:checked ~ .testimonial:nth-of-type(1),
-  #testimonial2:checked ~ .testimonial:nth-of-type(2),
-  #testimonial3:checked ~ .testimonial:nth-of-type(3) {
-    display: flex;
-  }
-
-  #testimonial1:checked ~ .testimonial-radios label:nth-of-type(1),
-  #testimonial2:checked ~ .testimonial-radios label:nth-of-type(2),
-  #testimonial3:checked ~ .testimonial-radios label:nth-of-type(3) {
-    background-color: #999;
+  .testimonial-signature {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
   }
 </style>

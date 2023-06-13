@@ -1,50 +1,64 @@
-<section class="mission-container">
-  <img
-    src="https://th.bing.com/th/id/OIP.luRbu4gb7a7Xx1JTFFThjAHaE7?pid=ImgDet&rs=1"
-    alt="mission image"
-    class="mission-image"
-  />
-  <div class="text-container">
-    <h2>Misión:</h2>
-    <p>
-      Pretendemos crear posibilidades, mediante becas estudiantiles, para
-      mejorar el futuro de aquellas personas que, como estudiantes de colegio,
-      tuvieron un desempeño destacable, pero que por su situación económica, no
-      podrían afrontar el pago de estudios superiores en universidades privadas.
-    </p>
-    <p>
-      Así, pretendemos transformarnos en el instrumento para potenciar el futuro
-      de personas que, de otra manera, su destino sería muy distinto.
-    </p>
-  </div>
+---
+const { title, paragraphs, imageUrl } = Astro.props;
+---
+
+<section
+  class="mission-card-container"
+  style={`background-image: url(${imageUrl});`}
+>
+  <section class="mission-card">
+    <div class="text-container">
+      <h2 class="mission-title">{title}:</h2>
+      {paragraphs.map((p: string) => <p class="mission-text">{p}</p>)}
+    </div>
+  </section>
 </section>
 
 <style>
-  .mission-container {
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sauce+Sans&display=swap");
+
+  .mission-card-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    font-family: "Arial", sans-serif;
-    font-size: 20px;
+    margin: 1rem;
+  }
+  .mission-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #efefefdd;
+    border-radius: 0 3rem 0 3rem;
+    padding: 2rem;
     line-height: 1.5;
-    max-width: 60vw;
-    margin: 0 auto;
+    width: 45%;
+    box-shadow: 0px 8px 16px 0px #7bcb79;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .mission-card:hover {
+    background-color: white;
+    transform: scale(1.05, 1.05);
   }
 
   .text-container {
-    text-align: center;
-    padding-left: 50px;
+    padding-left: 2rem;
   }
 
-  .mission-container h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
+  .mission-title {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
   }
 
-  .mission-image {
-    height: 20rem;
-    border-radius: 5px;
+  .mission-text {
+    font-family: "Open Sauce Sans", sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
   }
 </style>
