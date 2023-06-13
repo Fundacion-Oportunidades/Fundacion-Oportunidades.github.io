@@ -3,19 +3,20 @@ import type { Universities } from "../types/types";
 const universities: Universities[] = [
   {
     imageUrl:
-      "https://th.bing.com/th/id/OIP.CLPC-2bSt7CUlMH2A9DsXQHaHa?pid=ImgDet&rs=1",
-    imageAlt: "Logo Universidad 3",
+      "https://res.cloudinary.com/dsblswewr/image/upload/v1686690015/dcu_logo_i2rux9.png",
+    imageAlt: "Logo DCU",
     url: "https://www.dcu.ie/",
   },
   {
-    imageUrl: "https://www.ul.ie/themes/custom/ul/logo.jpg",
-    imageAlt: "Logo Universidad 1",
+    imageUrl:
+      "https://res.cloudinary.com/dsblswewr/image/upload/v1686690015/limerick_logo_kru7tp.png",
+    imageAlt: "Logo Limerick University",
     url: "https://www.ul.ie/",
   },
   {
     imageUrl:
-      "https://www.dcu.ie/sites/default/files/institute_education_access/2022-09/low-qual-logo_0.png",
-    imageAlt: "Logo Universidad 2",
+      "https://res.cloudinary.com/dsblswewr/image/upload/v1686690016/ucd_logo_rvflr9.png",
+    imageAlt: "Logo UCD",
     url: "https://www.ucd.ie/",
   },
 ];
