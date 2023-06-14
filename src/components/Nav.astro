@@ -128,6 +128,30 @@ interface Props extends MenuItem {}
     .right-container {
     }
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
+    nav {
+      font-size: 0.8rem;
+    }
+    .sub-options-container {
+      width: 9rem;
+      /* width: 100%; */
+      /* padding-right: 1rem; */
+      left: 0;
+      padding: 0.6rem;
+      /* padding-left: -1rem; */
+    }
+    .option-container {
+      width: 100%;
+      padding: 0.5rem 0 0.5rem 0;
+    }
+    ul {
+    }
+    .main-option:hover > .sub-options-container {
+      border-radius: 1rem;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      /* border-radius: 1rem 0 1rem 0; */
+    }
   }
 </style>

@@ -6,7 +6,7 @@ interface Props extends Companies {}
 ---
 
 <section class="companies-container">
-  <p>Empresas que confían en nosotros y en nuestros becados:</p>
+  <p class="companies-text">Empresas que confían en nosotros:</p>
   <div class="empresas-logos">
     {
       companies.map((c) => (
@@ -75,6 +75,11 @@ interface Props extends Companies {}
   @media screen and (max-width: 1100px) {
     .companies-img {
       height: 2.3rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .companies-text {
+      font-size: 1.2rem;
     }
   }
 </style>

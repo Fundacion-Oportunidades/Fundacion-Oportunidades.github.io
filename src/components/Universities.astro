@@ -6,7 +6,7 @@ interface Props extends Universities {}
 ---
 
 <section class="universities-container">
-  <p>Universidades que ponen sus becas a disposición:</p>
+  <p class="universities-text">Universidades adheridas:</p>
   <div class="universidades-logos">
     {
       universities.map((u) => (
@@ -74,6 +74,9 @@ interface Props extends Universities {}
   @media screen and (max-width: 1100px) {
     .university-image {
       height: 4rem;
+    }
+    .universities-text {
+      font-size: 1.2rem;
     }
   }
 </style>

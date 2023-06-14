@@ -55,11 +55,11 @@ const menuItems: MenuItem[] = [
         url: "/site/presentation",
       },
       {
-        title: "Oportunidades de Networking",
+        title: "Networking",
         url: "/site/networking",
       },
       {
-        title: "Oportunidades de Trabajo",
+        title: "Ofertas laborales",
         url: "/site/job_openings",
       },
     ],
