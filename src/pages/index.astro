@@ -5,14 +5,12 @@ import SocialMedia from "../components/SocialMedia.astro";
 import Testimonial from "../components/Testimonial.astro";
 import Universities from "../components/Universities.astro";
 import Layout from "../layouts/Layout.astro";
-import Carrusel from "../components/Carrusel.astro";
 
 import missionList from "../data/mission";
 import testimonials from "../data/testimonials";
 ---
 
 <Layout title="Fundacion Oportunidades">
-  <Carrusel />
   <SocialMedia />
   {
     missionList.map((m) => (

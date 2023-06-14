@@ -9,26 +9,34 @@ interface Props extends MenuItem {}
 <header>
   <OfferHead />
   <nav>
-    <div class="logo-container">
-      <a href="/site">
-        <img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685354115/oportunidades_logo_tkgaex.png"
-          alt="logo fundación oportunidades"
-          height="60px"
-        />
-      </a>
-    </div>
+    <a href="/site">
+      <img
+        src="https://res.cloudinary.com/dsblswewr/image/upload/v1685354115/oportunidades_logo_tkgaex.png"
+        alt="logo fundación oportunidades"
+        height="60px"
+      />
+    </a>
     <ul class="right-container">
       {
         menuItems.map((i) => (
-          <li class="main_option">
+          <li class="main-option">
             {i.title}
-            <ul>
-              {i.options.map((o) => (
-                <li>
-                  <a href={o.url}>{o.title}</a>
-                </li>
-              ))}
+            <ul class="sub-options-container">
+              {i.options.map((o) =>
+                o.title !== "Contactanos" ? (
+                  <li class="option-container">
+                    <a href={o.url} class="sub-option">
+                      {o.title}
+                    </a>
+                  </li>
+                ) : (
+                  <li class="option-container contact-container">
+                    <a href={o.url} class="sub-option contact-option">
+                      {o.title}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </li>
         ))
@@ -38,14 +46,16 @@ interface Props extends MenuItem {}
 </header>
 
 <style>
-  .main_option {
-    font-weight: bold;
-  }
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sauce+Sans&display=swap");
 
   header {
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100vw;
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: bold;
+    transition: all 0.5s ease;
   }
   nav {
     display: flex;
@@ -53,78 +63,71 @@ interface Props extends MenuItem {}
     justify-content: space-between;
     background-color: #f2f2f2d6;
     padding: 1rem;
-    transition: all 0.5s ease;
   }
 
   nav:hover {
     background-color: white;
   }
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    margin-left: 5rem;
-  }
-
   .right-container {
-    margin-right: 5rem;
-  }
-
-  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
 
-  nav li {
+  .main-option {
     position: relative;
-    margin-right: 20px;
+    padding: 1rem;
   }
 
-  nav li a {
+  .option-container {
+    display: block;
+    width: auto;
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .sub-option {
     text-decoration: none;
     color: #333;
-    padding: 10px;
   }
 
-  nav ul ul {
+  .sub-option:hover {
+    color: green;
+    /* font-weight: bold; */
+  }
+
+  .sub-options-container {
     display: none;
     position: absolute;
-    top: 100%;
-    /* font-weight: 200; */
     background-color: white;
     border-radius: 5px;
     border: 1px solid green;
-    padding: 10px;
+    padding: 1rem;
     white-space: nowrap;
+    right: 0;
   }
 
-  nav ul ul li {
+  .main-option:hover {
+  }
+
+  .main-option:hover > .sub-options-container {
+    border-radius: 1rem;
     display: block;
-    background-color: black;
-    top: 100%;
-    width: auto;
-    background-color: white;
-    padding: 10px;
-    /* white-space: nowrap; */
+    border-radius: 1rem 0 1rem 0;
   }
-
-  nav li:hover > ul {
-    display: block;
+  @media screen and (max-width: 1100px) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .right-container {
+    }
   }
-
-  nav li:hover {
-    color: green;
-  }
-
-  nav li a:hover {
-    transform: scale(1.1, 1.1);
-    /* font-weight: bold; */
-    color: green;
-  }
-
-  .nav-links {
-    margin-left: 16rem;
+  @media screen and (max-width: 900px) {
   }
 </style>

@@ -9,4 +9,8 @@ export default defineConfig({
     "/site/": "./src/pages/index.astro",
     "/site/about_us/": "./src/pages/about_us.astro",
   },
+  server: {
+    host: "192.168.0.108",
+    port: 3050,
+  },
 });

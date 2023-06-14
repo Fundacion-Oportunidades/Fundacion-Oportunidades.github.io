@@ -11,7 +11,7 @@ interface Props extends Companies {}
     {
       companies.map((c) => (
         <a href={c.url} target="_blank">
-          <img src={c.imageUrl} alt={c.imageAlt} />
+          <img src={c.imageUrl} alt={c.imageAlt} class="companies-img" />
         </a>
       ))
     }
@@ -70,5 +70,11 @@ interface Props extends Companies {}
 
   a {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .companies-img {
+      height: 2.3rem;
+    }
   }
 </style>

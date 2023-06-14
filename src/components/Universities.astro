@@ -11,7 +11,7 @@ interface Props extends Universities {}
     {
       universities.map((u) => (
         <a href={u.url} target="_blank">
-          <img src={u.imageUrl} alt={u.imageAlt} />
+          <img src={u.imageUrl} alt={u.imageAlt} class="university-image" />
         </a>
       ))
     }
@@ -70,5 +70,10 @@ interface Props extends Universities {}
 
   button:hover {
     background-color: #45a049;
+  }
+  @media screen and (max-width: 1100px) {
+    .university-image {
+      height: 4rem;
+    }
   }
 </style>

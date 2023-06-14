@@ -1,31 +1,29 @@
 <footer>
-  <nav>
-    <ul>
-      <li><a href="/site">Inicio</a></li>
-      <li><a href="/site/scholarships">Becas</a></li>
-      <li><a href="/site/contact_us">Contacto</a></li>
-      <li><a href="/site/about_us">Sobre nosotros</a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li><a href="/site" class="footer-link">Inicio</a></li>
+    <li><a href="/site/scholarships" class="footer-link">Becas</a></li>
+    <li><a href="/site/contact_us" class="footer-link">Contacto</a></li>
+    <li><a href="/site/about_us" class="footer-link">Sobre nosotros</a></li>
+  </ul>
 
   <div>
-    <p>Dirección de la Fundación</p>
-    <p>Teléfono: XXX-XXX-XXXX</p>
-    <p>Email: info@fundacionbecas.com</p>
+    <p>Dirección de la Fundación 123, Madrid</p>
+    <p>Teléfono: 999-999-9999</p>
+    <p>Email: info@funcionoportunidades.com</p>
   </div>
 </footer>
 
 <style>
   footer {
     background-color: #f2f2f2;
-    padding: 20px;
+    padding-top: 1rem;
     text-align: center;
     font-family: Arial, sans-serif;
     color: #333;
-    width: 90vw;
+    width: 100vw;
   }
 
-  nav ul {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -33,17 +31,16 @@
     justify-content: center;
   }
 
-  nav li {
+  .footer-link {
+    font-weight: bold;
+    color: black;
     margin: 0 10px;
-  }
-
-  nav a {
     text-decoration: none;
-    color: #333;
+    transition: all 0.3s ease;
   }
 
-  nav a:hover {
-    text-decoration: underline;
+  .footer-link:hover {
+    transform: scale(1.2, 1.2);
   }
 
   div {

@@ -21,11 +21,11 @@ const { title, paragraphs, imageUrl } = Astro.props;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    transition: all 0.3s ease;
   }
   .mission-card {
     display: flex;
@@ -36,19 +36,19 @@ const { title, paragraphs, imageUrl } = Astro.props;
     border-radius: 0 3rem 0 3rem;
     padding: 2rem;
     line-height: 1.5;
-    width: 45%;
+    width: 50%;
     box-shadow: 0px 8px 16px 0px #7bcb79;
-    margin: 1rem;
+    /* margin: 1rem; */
     transition: transform 0.3s ease;
   }
 
   .mission-card:hover {
-    background-color: white;
+    background-color: #efefef;
     transform: scale(1.05, 1.05);
   }
 
   .text-container {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
   }
 
   .mission-title {
@@ -60,5 +60,36 @@ const { title, paragraphs, imageUrl } = Astro.props;
     font-family: "Open Sauce Sans", sans-serif;
     font-style: italic;
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .mission-card-container {
+      width: 100vw;
+      height: 60vh;
+    }
+    .mission-card {
+      width: 80%;
+      padding: 1rem;
+      /* color: green; */
+    }
+    .mission-title {
+      font-size: 1.5rem;
+    }
+    .mission-text {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .mission-card {
+      width: 90%;
+      /* padding: 0; */
+    }
+    .mission-title {
+      font-size: 1.5rem;
+    }
+    .mission-text {
+      font-size: 1rem;
+    }
   }
 </style>

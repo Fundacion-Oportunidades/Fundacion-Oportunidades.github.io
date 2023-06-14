@@ -23,7 +23,7 @@ interface Props extends SocialMediaTypes {}
   </ul>
   <div class="button-container">
     <a href="/site/register">
-      <button>Registrate acá para pedir tu beca</button>
+      <button>Registrarse</button>
     </a>
   </div>
 </section>
@@ -35,6 +35,7 @@ interface Props extends SocialMediaTypes {}
     background-color: #f2f2f2;
     align-items: center;
     width: 100vw;
+    transition: all 0.5s ease;
   }
   .icons-container {
     margin-left: 6rem;
@@ -55,8 +56,8 @@ interface Props extends SocialMediaTypes {}
   }
 
   img.social-icon {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
   }
 
   img.facebook:hover {
@@ -96,5 +97,28 @@ interface Props extends SocialMediaTypes {}
 
   button:hover {
     background-color: #45a049;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .social-media-container {
+      display: flex;
+      /* justify-content: space-between; */
+      background-color: #f2f2f2;
+      align-items: center;
+      width: 100vw;
+      transition: all 0.5s ease;
+    }
+    .icons-container {
+      margin-left: 0rem;
+    }
+    button {
+      width: 8rem;
+    }
+    li {
+      margin: 0 0.3rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
   }
 </style>
