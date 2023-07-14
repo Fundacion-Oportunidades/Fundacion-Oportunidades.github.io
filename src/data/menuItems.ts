@@ -3,6 +3,7 @@ import type { MenuItem } from "../types/types";
 const menuItems: MenuItem[] = [
   {
     title: "La fundación",
+    url: "",
     options: [
       {
         title: "Sobre nosotros",
@@ -20,6 +21,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "Becas de Formación",
+    url: "",
     options: [
       {
         title: "Presentación",
@@ -49,10 +51,11 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "Red de Oportunidades",
+    url: "",
     options: [
       {
         title: "Presentación",
-        url: "/site/presentation",
+        url: "/site/net_presentation",
       },
       {
         title: "Networking",
@@ -66,12 +69,11 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "Contacto",
-    options: [
-      {
-        title: "Contactanos",
-        url: "/site/contact_us",
-      },
-    ],
+    url: "/site/contact_us",
+  },
+  {
+    title: "Ingresa",
+    url: "/site/register",
   },
 ];
 

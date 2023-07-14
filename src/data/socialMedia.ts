@@ -10,7 +10,7 @@ const socialMediaItems: SocialMediaTypes[] = [
     imageAlt: "facebook",
   },
   {
-    url: "https://www.twitter.com",
+    url: "https://twitter.com/Oportunidades_F?t=ixuRbRVmYsQLl5Ng3OC--A&s=08",
     imageUrlInactive:
       "https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/twitter_gris_bcfe4m.png",
     imageUrlActive:
@@ -18,15 +18,7 @@ const socialMediaItems: SocialMediaTypes[] = [
     imageAlt: "twitter",
   },
   {
-    url: "https://www.youtube.com",
-    imageUrlInactive:
-      "https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/youtube_gris_whvrro.png",
-    imageUrlActive:
-      "https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/youtube_rojo_acijb4.png",
-    imageAlt: "youtube",
-  },
-  {
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/company/fundacion-oportunidades/",
     imageUrlInactive:
       "https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/ln_gris_k1nap3.png",
     imageUrlActive:
@@ -34,7 +26,7 @@ const socialMediaItems: SocialMediaTypes[] = [
     imageAlt: "linkedin",
   },
   {
-    url: "https://www.instagram.com",
+    url: "https://instagram.com/fundacion.oportunidades?igshid=MzRlODBiNWFlZA==",
     imageUrlInactive:
       "https://res.cloudinary.com/dsblswewr/image/upload/v1685355460/insta_gris_xcva8o.png",
     imageUrlActive:

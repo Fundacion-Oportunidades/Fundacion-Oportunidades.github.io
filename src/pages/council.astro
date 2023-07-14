@@ -1,7 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CouncilCard from "../components/CouncilCard.astro";
 ---
 
 <Layout title="Consejo Asesor">
-  <h1>Consejo Asesor</h1>
+  <p>Consejo Asesor</p>
+  <div class="card-container">
+    <CouncilCard />
+  </div>
+  <div class="card-container"><CouncilCard /></div>
+  <div class="card-container"><CouncilCard /></div>
+  <div class="card-container"><CouncilCard /></div>
 </Layout>
+
+<style>
+  .card-container {
+    margin: 1rem;
+    min-width: 50vw;
+  }
+  @media only screen and (min-width: 768px) {
+    .card-container {
+      margin: 1rem;
+    }
+  }
+</style>

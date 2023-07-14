@@ -1,5 +1,6 @@
 export interface MenuItem {
   title: string;
+  url: string;
   options: {
     title: string;
     url: string;

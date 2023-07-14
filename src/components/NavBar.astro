@@ -1,0 +1,105 @@
+---
+import {
+  Astronav,
+  MenuItems,
+  MenuIcon,
+  Dropdown,
+  DropdownItems,
+  DropdownSubmenu,
+} from "astro-navbar";
+import type { MenuItem } from "../types/types";
+import menuItems from "../data/menuItems";
+import OfferHead from "./OfferHead.astro";
+
+interface Props extends MenuItem {}
+---
+
+<header class="lg:flex items-center justify-around p-5 gap-5 mx-auto container">
+  <Astronav closeOnClick>
+    <div class="flex w-full lg:w-auto justify-between">
+      <!-- <a>Your Logo</a> -->
+      <a href="/site">
+        <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1685354115/oportunidades_logo_tkgaex.png"
+          alt="logo fundación oportunidades"
+          class="h-12"
+        />
+        <!-- Home -->
+      </a>
+      <div class="block lg:hidden">
+        <MenuIcon class="w-4 h-4 text-gray-800" />
+      </div>
+    </div>
+    <MenuItems class="hidden lg:flex">
+      <ul class="flex flex-col lg:flex-row lg:gap-5">
+        {
+          menuItems.map((i) => (
+            <li>
+              <Dropdown class="group">
+                <button class="flex items-center nav-main-option">
+                  <span
+                    class={
+                      i.title === "Ingresa"
+                        ? "py-2 px-4  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+                        : "py-2 px-4  text-black w-full transition ease-in duration-200 text-center text-base font-semibold"
+                    }
+                  >
+                    {i.title === "Ingresa" ? (
+                      <a href={i.url}>{i.title}</a>
+                    ) : i.title === "Contacto" ? (
+                      <a href={i.url}>{i.title}</a>
+                    ) : (
+                      i.title
+                    )}
+                  </span>
+                </button>
+                {i.options && (
+                  <DropdownItems class="relative">
+                    <div class="lg:absolute bg-white top-2 w-40 border shadow rounded p-2 open-box">
+                      <ul>
+                        {i.options &&
+                          i.options.map((o) => (
+                            <li>
+                              <a
+                                href={o.url}
+                                class={"flex px-4 py-3 hover:bg-gray-50"}
+                              >
+                                {o.title}
+                              </a>
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
+                  </DropdownItems>
+                )}
+              </Dropdown>
+            </li>
+          ))
+        }
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>
+
+<style>
+  header {
+    font-weight: 500;
+    /* text-transform: uppercase !important; */
+  }
+
+  .nav-main-option {
+    padding: 5px 10px 5px 10px;
+    /* background-color: antiquewhite; */
+  }
+
+  .open-box {
+    width: 300px !important;
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* img {
+      justify-self: center;
+      align-items: center;
+    } */
+  }
+</style>

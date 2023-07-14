@@ -3,65 +3,144 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Formulario de Registro">
-  <form action="/enviar" method="post">
-    <div>
-      <label for="nombre">Nombre:</label>
-      <input
-        type="text"
-        id="nombre"
-        name="nombre"
-        placeholder="Ingrese su nombre"
-        required
-      />
+  <p class="contact-us-title">Formulario de Registro</p>
+  <form class="w-full max-w-sm">
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+          for="inline-full-name"
+        >
+          Nombre
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+          id="inline-full-name"
+          type="text"
+        />
+      </div>
     </div>
-    <div>
-      <label for="correo">Correo Electrónico:</label>
-      <input
-        type="email"
-        id="correo"
-        name="correo"
-        placeholder="Ingrese su correo electrónico"
-        required
-      />
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+          for="inline-full-name"
+        >
+          Apellido
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+          id="inline-full-name"
+          type="text"
+        />
+      </div>
     </div>
-    <div>
-      <label for="pais">País de Interés:</label>
-      <input
-        type="text"
-        id="pais"
-        name="pais"
-        placeholder="Ingrese el país de interés"
-        required
-      />
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+          for="inline-full-name"
+        >
+          E-mail
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+          id="inline-full-name"
+          type="text"
+        />
+      </div>
     </div>
-    <div>
-      <label for="universidad">Universidad de Interés:</label>
-      <input
-        type="text"
-        id="universidad"
-        name="universidad"
-        placeholder="Ingrese la universidad de interés"
-        required
-      />
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+          for="inline-full-name"
+        >
+          País de interés
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+          id="inline-full-name"
+          type="text"
+        />
+      </div>
     </div>
-    <div>
-      <label for="motivacion">Motivación:</label>
-      <textarea
-        id="motivacion"
-        name="motivacion"
-        rows="5"
-        cols="30"
-        placeholder="Explique su motivación para estudiar en el extranjero"
-        required></textarea>
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+          for="inline-full-name"
+        >
+          Universidad de interés
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+          id="inline-full-name"
+          type="text"
+        />
+      </div>
     </div>
-    <div style="display: flex; justify-content: center;">
-      <button type="submit">Enviar</button>
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+          for="inline-full-name"
+        >
+          Motivación
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <textarea
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+          id="inline-full-name"
+          rows="5"></textarea>
+      </div>
+    </div>
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+          for="inline-password"
+        >
+          Contraseña
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+          id="inline-password"
+          type="password"
+          placeholder="******************"
+        />
+      </div>
     </div>
   </form>
+
+  <div class="md:flex md:items-center">
+    <div class="md:w-2/3">
+      <button
+        class="py-2 px-4 bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+        type="button"
+      >
+        Sign Up
+      </button>
+    </div>
+  </div>
 </Layout>
 
 <style>
-  form {
+  /* 
+form {
     display: grid;
     grid-gap: 10px;
     margin-top: 3rem;
@@ -72,8 +151,21 @@ import Layout from "../layouts/Layout.astro";
     font-weight: bold;
   }
 
-  input,
+  input, */
+  .contact-us-title {
+    font-weight: bold;
+    font-size: large;
+    /* font-family: "Open Sauce Sans", sans-serif; */
+    /* font-family: "Libre Baskerville", serif; */
+    padding: 0.5rem;
+    color: rgba(3, 3, 3, 0.63);
+    border-top: 1px solid rgba(34, 192, 28, 0.25);
+    border-bottom: 1px solid rgba(34, 192, 28, 0.25);
+    margin-bottom: 1rem;
+    width: 90vw;
+  }
   textarea {
+    resize: "none" !important;
     margin-top: 1rem;
     width: 100%;
     padding: 5px;
@@ -81,7 +173,7 @@ import Layout from "../layouts/Layout.astro";
     border-radius: 4px;
     transition: box-shadow 0.3s ease-in-out;
   }
-
+  /* 
   input:focus,
   textarea:focus {
     outline: none;
@@ -105,5 +197,5 @@ import Layout from "../layouts/Layout.astro";
 
   button:hover {
     background-color: #45a049;
-  }
+  } */
 </style>

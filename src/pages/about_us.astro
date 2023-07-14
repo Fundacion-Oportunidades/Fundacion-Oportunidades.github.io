@@ -1,7 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Mission from "../components/Mission.astro";
+
+import missionList from "../data/mission";
 ---
 
 <Layout title="Sobre Nosotros">
-  <h1>Sobre nosotros</h1>
+  {
+    missionList.map((m) => (
+      <Mission
+        title={m.title}
+        paragraphs={m.paragraphs}
+        imageUrl={m.imageUrl}
+      />
+    ))
+  }
+  <section
+    class="rounded-lg shadow-md p-8 max-w-2xl mx-auto net-presentation"
+    style="background: linear-gradient(to bottom, #f8f8f159, #fdf5e671);"
+  >
+    <div class="font-body font-semibold text-xl mb-4">Nuestros Valores:</div>
+    <div class="border-t-2 border-green-100 mb-4"></div>
+    <p class="font-body text-lg mb-4">
+      Equidad Inclusión Transparencia Impacto Cooperación Mérito
+    </p>
+
+    <div class="border-t-2 border-green-100 mb-4"></div>
+
+    <div class="font-body font-semibold text-xl mb-4">Objetivo:</div>
+
+    <div class="border-t-2 border-green-100 mb-4"></div>
+    <p class="font-body text-lg mb-4">
+      La Fundación Oportunidades, en base a los objetivos de ayudar al
+      crecimiento personal y profesional de personas de bajos recursos, tiene
+      como principal campo de acción el otorgamiento de becas de estudio y
+      estipendios mensuales, a alumnos que cuentan con buen rendimiento
+      académico. La idea de trabajo es muy simple: otorgar becas de estudio a
+      personas de bajos recursos y con buen rendimiento académico, para que
+      puedan estudiar en universidades privadas del país. Es decir, la idea es
+      darle oportunidades a aquellas personas que, de otra manera, no las
+      tendrían.
+    </p>
+  </section>
 </Layout>
