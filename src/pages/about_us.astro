@@ -17,49 +17,86 @@ import missionList from "../data/mission";
   }
 
   <section class="mission-card-container">
-    <h1 class="box-main-title">Nuestros Valores:</h1>
-    <ul class="mini-box-container">
-      <li class="li-box">
-        Equidad <img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/equidad_st8twu.png"
-          class="card-mini-img"
-        />
-      </li>
-      <li class="li-box">
-        Inclusión <img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/inclusion_njctpy.png"
-          class="card-mini-img"
-        />
-      </li>
-      <li class="li-box">
-        Transparencia <img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/transparencia_evzm0n.png"
-          class="card-mini-img"
-        />
-      </li>
-      <li class="li-box">
-        Impacto <img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/impacto_nvq5gz.png"
-          class="card-mini-img"
-        />
-      </li>
-      <li class="li-box">
-        Cooperación <img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/cooperacion_jixb74.png"
-          class="card-mini-img"
-        />
-      </li>
-      <li class="li-box">
-        Mérito <img
-          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/merito_qopdqs.png"
-          class="card-mini-img"
-        />
-      </li>
-    </ul>
+    <div class="mission-card">
+      <div class="text-container">
+        <h1 class="box-main-title">Nuestros Valores:</h1>
+        <ul class="mini-box-container">
+          <li class="li-box">
+            Equidad <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/equidad_st8twu.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Inclusión <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/inclusion_njctpy.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Transparencia <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/transparencia_evzm0n.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Impacto <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/impacto_nvq5gz.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Cooperación <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/cooperacion_jixb74.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Mérito <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/merito_qopdqs.png"
+              class="card-mini-img"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 </Layout>
 
 <style>
+  .mission-card-container {
+    opacity: 1;
+    margin: 1rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    /* background-image: url("https://res.cloudinary.com/dsblswewr/image/upload/v1689952865/escalera_diagonal_r4vzhk.png");
+    background-size: 40rem;
+    background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-position: right bottom; */
+  }
+
+  .mission-card {
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 70%; */
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 3rem 5rem 3rem 5rem;
+  }
   .mini-box-container {
     display: flex;
     justify-content: center;
@@ -85,5 +122,13 @@ import missionList from "../data/mission";
     margin: 2rem;
     font-size: 2rem;
     font-family: "Open Sauce Sans";
+    opacity: 1;
+    margin: 1rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   }
 </style>

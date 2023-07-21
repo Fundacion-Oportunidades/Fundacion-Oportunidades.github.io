@@ -3,7 +3,7 @@ const { title, paragraphs, imageUrl } = Astro.props;
 ---
 
 <section class="mission-card-container">
-  <section class="mission-card">
+  <div class="mission-card">
     <div class="text-container">
       <h1 class="mission-title">
         {title}
@@ -12,7 +12,7 @@ const { title, paragraphs, imageUrl } = Astro.props;
       <hr class="division-line" />
       {paragraphs.map((p: string) => <p class="mission-text">{p}</p>)}
     </div>
-  </section>
+  </div>
 </section>
 
 <style>
