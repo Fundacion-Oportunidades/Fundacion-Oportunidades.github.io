@@ -2,61 +2,86 @@
 const { imageUrl, imageAlt, text, signature } = Astro.props;
 ---
 
-<section class="testimonials-container">
-  <div class="testimonial">
-    <img src={imageUrl} alt={imageAlt} class="testimonial-image" />
-    <span class="testimonial-text-container">
-      <p class="testimonial-text">{text}</p>
-      <p class="testimonial-signature">{signature}</p>
-    </span>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="flip-card-image" src={imageUrl} alt={imageAlt} />
+    </div>
+    <div class="flip-card-back">
+      <p class="flip-card-text">{text}</p>
+      <p class="flip-card-signature">{signature}</p>
+    </div>
   </div>
-</section>
+</div>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sauce+Sans&display=swap");
 
-  .testimonials-container {
-    display: flex;
-    margin: 2rem;
-    border-radius: 0 2rem 0 2rem;
-    width: 90vw;
-    background-color: #efefef;
-    transition: all 0.3s ease;
+  .flip-card {
+    width: 500px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 2rem 5rem 2rem 5rem;
   }
 
-  .testimonials-container:hover {
-    box-shadow: 0px 8px 16px 0px #7bcb79;
+  .flip-card-image {
+    height: 320px;
+    width: 500px;
   }
 
-  .testimonial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
   }
 
-  .testimonial-image {
-    width: 40rem;
-    border-radius: 0 0 0 2rem;
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
   }
 
-  .testimonial-text-container {
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* padding: 1rem; */
   }
 
-  .testimonial-text {
-    padding: 0 3rem 0 3rem;
-    font-family: "Open Sauce Sans", sans-serif;
-    font-style: italic;
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 4rem;
+  .flip-card-front {
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .testimonial-signature {
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip-card-text {
+    padding: 0 3rem 0 3rem;
+    font-family: "Open Sauce Sans";
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .flip-card-signature {
     font-family: "Libre Baskerville", serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   @media screen and (max-width: 1100px) {
     .testimonial-image {
