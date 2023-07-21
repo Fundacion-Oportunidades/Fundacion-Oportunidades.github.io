@@ -12,37 +12,55 @@ import SocialMedia from "./SocialMedia.astro";
   </ul>
 
   <div class="footer-info">
-    <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
-    <p>Teléfono: 999-999-9999</p>
-    <p>Email: info@fundacionoportunidades.org</p>
+    <div class="footer-text-container">
+      <img
+        src="https://res.cloudinary.com/dsblswewr/image/upload/v1689807197/web-icon_rik9pl.png"
+        style={"width: 25px"}
+      />
+      <p class="footer-text">Ciudad Autónoma de Buenos Aires, Argentina</p>
+    </div>
+    <div class="footer-text-container">
+      <img
+        src="https://res.cloudinary.com/dsblswewr/image/upload/v1689807197/phone-icon_ubefox.png"
+        style={"width: 25px"}
+      />
+      <p class="footer-text">999-999-9999</p>
+    </div>
+    <div class="footer-text-container">
+      <img
+        src="https://res.cloudinary.com/dsblswewr/image/upload/v1689807197/mail-icon_pausiy.png"
+        style={"width: 25px"}
+      />
+      <p class="footer-text">info@fundacionoportunidades.org</p>
+    </div>
   </div>
 </footer>
 
 <style>
   footer {
-    background-color: #f2f2f2;
-    padding: 1rem 0 2rem 0;
-
+    /* padding: 10px 0 10px 0; */
+    margin: 10px 0 10px 0;
     text-align: center;
-    font-family: Arial, sans-serif;
     color: #333;
     width: 100vw;
     margin-top: 2rem;
+    font-family: "Open Sauce Sans";
   }
 
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
   }
 
+  ul li {
+    margin: 0 20px 0 20px;
+  }
+
   .footer-link {
     font-weight: bold;
-    color: black;
     margin: 0 10px;
-    text-decoration: none;
+    /* text-decoration: none; */
     transition: all 0.3s ease;
   }
 
@@ -51,6 +69,20 @@ import SocialMedia from "./SocialMedia.astro";
   }
 
   .footer-info {
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-text-container {
+    /* padding: 5px; */
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-text {
+    margin: 0 15px 0 15px;
   }
 </style>

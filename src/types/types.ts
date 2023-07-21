@@ -43,3 +43,8 @@ export interface Mission {
   imageUrl: string;
   paragraphs: string[];
 }
+
+export interface TextCardItems {
+  title: string;
+  paragraphs: string[];
+}

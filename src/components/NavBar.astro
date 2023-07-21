@@ -9,22 +9,19 @@ import {
 } from "astro-navbar";
 import type { MenuItem } from "../types/types";
 import menuItems from "../data/menuItems";
-import OfferHead from "./OfferHead.astro";
 
 interface Props extends MenuItem {}
 ---
 
-<header class="lg:flex items-center justify-around p-5 gap-5 mx-auto container">
+<header class="lg:flex items-center justify-around p-5 gap-5 mx-auto">
   <Astronav closeOnClick>
     <div class="flex w-full lg:w-auto justify-between">
-      <!-- <a>Your Logo</a> -->
       <a href="/site">
         <img
           src="https://res.cloudinary.com/dsblswewr/image/upload/v1685354115/oportunidades_logo_tkgaex.png"
           alt="logo fundación oportunidades"
           class="h-12"
         />
-        <!-- Home -->
       </a>
       <div class="block lg:hidden">
         <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -40,7 +37,7 @@ interface Props extends MenuItem {}
                   <span
                     class={
                       i.title === "Ingresa"
-                        ? "py-2 px-4  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+                        ? "login-button py-2 px-4  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
                         : "py-2 px-4  text-black w-full transition ease-in duration-200 text-center text-base font-semibold"
                     }
                   >
@@ -62,7 +59,9 @@ interface Props extends MenuItem {}
                             <li>
                               <a
                                 href={o.url}
-                                class={"flex px-4 py-3 hover:bg-gray-50"}
+                                class={
+                                  "flex px-4 py-3 hover:bg-green-100 hover:font-semibold"
+                                }
                               >
                                 {o.title}
                               </a>
@@ -83,23 +82,52 @@ interface Props extends MenuItem {}
 
 <style>
   header {
-    font-weight: 500;
-    /* text-transform: uppercase !important; */
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); /* Horizontal offset, Vertical offset, Blur radius, Shadow color with opacity */
+    width: 100vw !important;
+    font-family: "Open Sauce Sans";
+    margin-bottom: 20px;
+    /* position: fixed;
+    top: 0rem;
+    z-index: 2; */
+    /* background-color: rgba(239, 239, 239, 0.867); */
   }
 
   .nav-main-option {
-    padding: 5px 10px 5px 10px;
+    /* padding: 2px 10px 2px 10px; */
     /* background-color: antiquewhite; */
+    background-image: linear-gradient(to right, #53924f, #53924f 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-main-option:before {
+    content: "";
+    background: #53924f;
+    display: block;
+    position: absolute;
+  }
+
+  .nav-main-option:hover {
+    background-position: 0;
+  }
+
+  .nav-main-option:hover::before {
+    width: 100%;
   }
 
   .open-box {
     width: 300px !important;
   }
 
+  .login-button {
+    -webkit-text-fill-color: aliceblue;
+    color: rgb(247, 243, 243) !important;
+    /* z-index: 2; */
+  }
+
   @media only screen and (min-width: 768px) {
-    /* img {
-      justify-self: center;
-      align-items: center;
-    } */
   }
 </style>

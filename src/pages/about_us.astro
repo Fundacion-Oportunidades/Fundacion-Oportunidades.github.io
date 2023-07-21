@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Mission from "../components/Mission.astro";
 
+import Mission from "../components/Mission.astro";
 import missionList from "../data/mission";
 ---
 
@@ -15,31 +15,75 @@ import missionList from "../data/mission";
       />
     ))
   }
-  <section
-    class="rounded-lg shadow-md p-8 max-w-2xl mx-auto net-presentation"
-    style="background: linear-gradient(to bottom, #f8f8f159, #fdf5e671);"
-  >
-    <div class="font-body font-semibold text-xl mb-4">Nuestros Valores:</div>
-    <div class="border-t-2 border-green-100 mb-4"></div>
-    <p class="font-body text-lg mb-4">
-      Equidad Inclusión Transparencia Impacto Cooperación Mérito
-    </p>
 
-    <div class="border-t-2 border-green-100 mb-4"></div>
-
-    <div class="font-body font-semibold text-xl mb-4">Objetivo:</div>
-
-    <div class="border-t-2 border-green-100 mb-4"></div>
-    <p class="font-body text-lg mb-4">
-      La Fundación Oportunidades, en base a los objetivos de ayudar al
-      crecimiento personal y profesional de personas de bajos recursos, tiene
-      como principal campo de acción el otorgamiento de becas de estudio y
-      estipendios mensuales, a alumnos que cuentan con buen rendimiento
-      académico. La idea de trabajo es muy simple: otorgar becas de estudio a
-      personas de bajos recursos y con buen rendimiento académico, para que
-      puedan estudiar en universidades privadas del país. Es decir, la idea es
-      darle oportunidades a aquellas personas que, de otra manera, no las
-      tendrían.
-    </p>
+  <section class="mission-card-container">
+    <h1 class="box-main-title">Nuestros Valores:</h1>
+    <ul class="mini-box-container">
+      <li class="li-box">
+        Equidad <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/equidad_st8twu.png"
+          class="card-mini-img"
+        />
+      </li>
+      <li class="li-box">
+        Inclusión <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/inclusion_njctpy.png"
+          class="card-mini-img"
+        />
+      </li>
+      <li class="li-box">
+        Transparencia <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/transparencia_evzm0n.png"
+          class="card-mini-img"
+        />
+      </li>
+      <li class="li-box">
+        Impacto <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/impacto_nvq5gz.png"
+          class="card-mini-img"
+        />
+      </li>
+      <li class="li-box">
+        Cooperación <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/cooperacion_jixb74.png"
+          class="card-mini-img"
+        />
+      </li>
+      <li class="li-box">
+        Mérito <img
+          src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/merito_qopdqs.png"
+          class="card-mini-img"
+        />
+      </li>
+    </ul>
   </section>
 </Layout>
+
+<style>
+  .mini-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .box-main-title {
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .card-mini-img {
+    height: 8rem;
+    margin: 1rem;
+    color: green;
+  }
+  .li-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    font-size: 2rem;
+    font-family: "Open Sauce Sans";
+  }
+</style>

@@ -1,0 +1,18 @@
+---
+const { title, paragraphs } = Astro.props;
+---
+
+<section
+  class="rounded-lg shadow-md p-8 max-w-2xl mx-auto net-presentation"
+  style="background: linear-gradient(to bottom, #f8f8f159, #fdf5e671);"
+>
+  <div class="font-body font-semibold text-xl mb-4">{title}</div>
+  <div class="border-t-2 border-green-150 mb-4"></div>
+  {paragraphs.map((p: string) => <p class="font-body text-base mb-4">{p}</p>)}
+</section>
+
+<style>
+  .link-style {
+    font-weight: bold;
+  }
+</style>

@@ -2,63 +2,69 @@
 const { title, paragraphs, imageUrl } = Astro.props;
 ---
 
-<section
-  class="mission-card-container"
-  style={`background-image: url(${imageUrl});`}
->
+<section class="mission-card-container">
   <section class="mission-card">
     <div class="text-container">
-      <h2 class="mission-title">{title}:</h2>
+      <h1 class="mission-title">
+        {title}
+      </h1>
+
+      <hr class="division-line" />
       {paragraphs.map((p: string) => <p class="mission-text">{p}</p>)}
     </div>
   </section>
 </section>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sauce+Sans&display=swap");
-
   .mission-card-container {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 90vh;
+    opacity: 1;
+    margin: 1rem;
+    padding: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-image: url("https://res.cloudinary.com/dsblswewr/image/upload/v1689952865/escalera_diagonal_r4vzhk.png");
+    background-size: 40rem;
+    background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
   .mission-card {
+    min-height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #efefefdd;
-    border-radius: 0 3rem 0 3rem;
-    padding: 2rem;
-    line-height: 1.5;
-    width: 50%;
-    box-shadow: 0px 8px 16px 0px #7bcb79;
-    /* margin: 1rem; */
-    transition: transform 0.3s ease;
+    width: 70%;
   }
 
-  .mission-card:hover {
-    background-color: #efefef;
-    transform: scale(1.05, 1.05);
-  }
   .text-container {
-    /* padding-left: 2rem; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 3rem 5rem 3rem 5rem;
   }
 
   .mission-title {
-    font-family: "Libre Baskerville", serif;
-    font-size: 2rem;
+    font-family: "Libre Baskerville";
+    font-size: 2.5rem;
+    font-weight: bold;
   }
 
+  .division-line {
+    background-color: green;
+    margin: 1rem;
+    height: 2px;
+  }
   .mission-text {
-    font-family: "Open Sauce Sans", sans-serif;
+    font-family: "Open Sauce Sans";
     font-style: italic;
     font-size: 1.5rem;
+    text-indent: 3rem;
+    margin: 1rem 0 1rem 0;
   }
 
   @media screen and (max-width: 1100px) {
@@ -69,7 +75,6 @@ const { title, paragraphs, imageUrl } = Astro.props;
     .mission-card {
       width: 80%;
       padding: 1rem;
-      /* color: green; */
     }
     .mission-title {
       font-size: 1.5rem;
@@ -82,7 +87,6 @@ const { title, paragraphs, imageUrl } = Astro.props;
   @media screen and (max-width: 800px) {
     .mission-card {
       width: 85%;
-      /* padding: 0; */
     }
     .mission-title {
       font-size: 1.5rem;

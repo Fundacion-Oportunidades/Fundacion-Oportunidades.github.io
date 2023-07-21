@@ -2,7 +2,7 @@ import type { MenuItem } from "../types/types";
 
 const menuItems: MenuItem[] = [
   {
-    title: "La fundación",
+    title: "La Fundación",
     url: "",
     options: [
       {
