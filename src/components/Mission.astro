@@ -30,6 +30,11 @@ const { title, paragraphs, imageUrl } = Astro.props;
     background-blend-mode: difference;
     background-repeat: no-repeat;
     background-position: right bottom;
+    width: 100vw;
+  }
+  .mission-card-container:hover {
+    background-color: rgb(74, 168, 81);
+    color: white;
   }
   .mission-card {
     min-height: 30rem;
@@ -37,7 +42,7 @@ const { title, paragraphs, imageUrl } = Astro.props;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
   }
 
   .text-container {
