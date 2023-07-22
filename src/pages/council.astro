@@ -1,26 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CouncilCard from "../components/CouncilCard.astro";
+import council from "../data/valuesCouncil";
 ---
 
 <Layout title="Consejo Asesor">
-  <p>Consejo Asesor</p>
-  <div class="card-container">
-    <CouncilCard />
+  <h1 class="council-title">Consejo Asesor</h1>
+  <div class="council-container">
+    {
+      council.map((c) => (
+        <CouncilCard name={c.name} imageUrl={c.imageUrl} rank={c.rank} />
+      ))
+    }
   </div>
-  <div class="card-container"><CouncilCard /></div>
-  <div class="card-container"><CouncilCard /></div>
-  <div class="card-container"><CouncilCard /></div>
 </Layout>
 
 <style>
-  .card-container {
-    margin: 1rem;
-    min-width: 50vw;
+  .council-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .council-title {
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
   }
   @media only screen and (min-width: 768px) {
-    .card-container {
-      margin: 1rem;
-    }
   }
 </style>

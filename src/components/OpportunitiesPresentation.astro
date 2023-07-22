@@ -1,12 +1,10 @@
 ---
-import type { TextCardItems } from "../types/types";
 import valuesPresentationNetworking from "../data/valuesPresentationNetworking";
-
-import TextCard from "./TextCard.astro";
+import Mission from "../components/Mission.astro";
 ---
 
 {
   valuesPresentationNetworking.map((i) => (
-    <TextCard title={i.title} paragraphs={i.paragraphs} />
+    <Mission title={i.title} paragraphs={i.paragraphs} />
   ))
 }

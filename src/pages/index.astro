@@ -20,7 +20,8 @@ import Mission from "../components/Mission.astro";
     ))
   }
 
-  <h1>Testimonios de algunos de nuestros becados</h1>
+  <h1 class="title">Experiencias de algunos de nuestros becados</h1>
+  <hr class="division-line" />
   <section class="testimonials-container">
     {
       testimonials.map((t) => (
@@ -33,7 +34,11 @@ import Mission from "../components/Mission.astro";
       ))
     }
   </section>
+  <h1 class="title">Universidades adheridas</h1>
+  <hr class="division-line" />
   <Universities />
+  <h1 class="title">Empresas que confían en nosotros</h1>
+  <hr class="division-line" />
   <Companies />
 </Layout>
 
@@ -46,5 +51,18 @@ import Mission from "../components/Mission.astro";
     width: 100vw;
     transition: all 0.3s ease;
     margin-top: 2rem;
+  }
+  .division-line {
+    background-color: green;
+    margin: 1rem;
+    height: 2px;
+    width: 65vw;
+  }
+
+  .title {
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
   }
 </style>

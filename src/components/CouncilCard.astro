@@ -1,32 +1,42 @@
-<div class="max-w-sm w-full lg:max-w-full lg:flex">
-  <div
-    class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-    style="background-image: url('https://pbs.twimg.com/profile_images/1502045597532106752/xtKngYmS_400x400.jpg')"
-    title="Woman holding a mug"
-  >
-  </div>
-  <div
-    class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-  >
-    <div class="mb-8">
-      <div class="text-gray-900 font-bold text-xl mb-2">
-        Miembro del consejo
-      </div>
-      <p class="text-gray-700 text-base">
-        Esta es una breve descripción de la persona que conforma el consejo
-        asesor de la fundacion
-      </p>
-    </div>
-    <div class="flex items-center">
-      <img
-        class="w-10 h-10 rounded-full mr-4"
-        src="https://pbs.twimg.com/profile_images/1502045597532106752/xtKngYmS_400x400.jpg"
-        alt="Avatar of Jonathan Reinink"
-      />
-      <div class="text-sm">
-        <p class="text-gray-900 leading-none">Jonathan Reinink</p>
-        <p class="text-gray-600">Aug 18</p>
-      </div>
-    </div>
+---
+const { imageUrl, name, rank } = Astro.props;
+---
+
+<div class="council-card">
+  <img class="council-card-image" src={imageUrl} alt={name} />
+  <div class="council-card-text">
+    <p class="council-card-name">{name}</p>
+    <p class="council-card-rank">{rank}</p>
   </div>
 </div>
+
+<style>
+  .council-card {
+    /* border: 1px solid green; */
+    height: 400px;
+    width: 250px;
+    border-radius: 15px;
+    font-family: "Open Sauce Sans";
+    margin: 1rem;
+    background-color: rgb(239, 239, 239);
+  }
+  .council-card-image {
+    border-radius: 15px 15px 0 0;
+    height: 330px;
+  }
+  .council-card-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-indent: 1rem;
+    padding-top: 10px;
+  }
+  .council-card-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .council-card-rank {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+</style>

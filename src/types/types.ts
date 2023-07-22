@@ -48,3 +48,9 @@ export interface TextCardItems {
   title: string;
   paragraphs: string[];
 }
+
+export interface WorkerCard {
+  name: string;
+  imageUrl: string;
+  rank: string;
+}

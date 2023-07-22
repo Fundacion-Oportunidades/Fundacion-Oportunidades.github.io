@@ -1,12 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TeamCard from "../components/TeamCard.astro";
+import CouncilCard from "../components/CouncilCard.astro";
+import team from "../data/valuesTeam";
 ---
 
 <Layout title="Equipo">
-  <p>Equipo</p>
-  <TeamCard />
-  <TeamCard />
-  <TeamCard />
-  <TeamCard />
+  <h1 class="council-title">Equipo</h1>
+  <div class="council-container">
+    {
+      team.map((c) => (
+        <CouncilCard name={c.name} imageUrl={c.imageUrl} rank={c.rank} />
+      ))
+    }
+  </div>
 </Layout>
+
+<style>
+  .council-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .council-title {
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+  }
+  @media only screen and (min-width: 768px) {
+  }
+</style>

@@ -10,7 +10,24 @@ const { title, paragraphs, imageUrl } = Astro.props;
       </h1>
 
       <hr class="division-line" />
-      {paragraphs.map((p: string) => <p class="mission-text">{p}</p>)}
+      {
+        paragraphs.map((p: any) => {
+          const linkRegex = /<a\s+(?:[^>]*?\s+)?href=(["'])(.*?)\1/i;
+          const match = p.match(linkRegex);
+
+          if (match) {
+            return (
+              <p class="mission-text">
+                <a class="link-style" href={match[2]}>
+                  {p.replace(/<[^>]+>/g, "")}
+                </a>
+              </p>
+            );
+          } else {
+            return <p class="mission-text">{p}</p>;
+          }
+        })
+      }
     </div>
   </div>
 </section>
