@@ -89,26 +89,18 @@ const { title, paragraphs, imageUrl } = Astro.props;
     margin: 1rem 0 1rem 0;
   }
 
-  @media screen and (max-width: 1100px) {
+  @media only screen and (max-width: 768px) {
     .mission-card-container {
-      width: 100vw;
-      height: 60vh;
+      background-image: none;
+      padding: 0 !important;
+      margin: 0 !important;
     }
     .mission-card {
-      width: 80%;
+      width: 90vw !important;
+      padding: 0;
+    }
+    .text-container {
       padding: 1rem;
-    }
-    .mission-title {
-      font-size: 1.5rem;
-    }
-    .mission-text {
-      font-size: 1rem;
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    .mission-card {
-      width: 85%;
     }
     .mission-title {
       font-size: 1.5rem;

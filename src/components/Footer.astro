@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia.astro";
 
 <footer>
   <SocialMedia />
-  <ul>
+  <ul class="footer-link-container">
     <li><a href="/site" class="footer-link">Inicio</a></li>
     <li><a href="/site/scholarships" class="footer-link">Becas</a></li>
     <li><a href="/site/contact_us" class="footer-link">Contacto</a></li>
@@ -84,5 +84,25 @@ import SocialMedia from "./SocialMedia.astro";
   }
   .footer-text {
     margin: 0 15px 0 15px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .footer-link-container {
+      margin-top: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-link-container li {
+      margin: 0 1rem 0 1rem;
+    }
+    .footer-link {
+      margin: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 </style>
