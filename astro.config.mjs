@@ -9,11 +9,11 @@ export default defineConfig({
   trailingSlash: "never",
   routes: {
     "/site/": "./src/pages/index.astro",
-    "/site/about_us/": "./src/pages/about_us.astro"
+    "/site/about_us/": "./src/pages/about_us.astro",
   },
   server: {
-    host: "192.168.0.108",
-    port: 3050
+    port: 3050,
   },
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  jsxFactory: "h",
 });

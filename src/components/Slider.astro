@@ -1,0 +1,57 @@
+---
+const { list } = Astro.props;
+---
+
+<section class="h-[auto] sliderClass w-full relative">
+    <div class="relative">
+        <div class=" h-full relative overflow-hidden">
+          <div class="flex animate-slide">
+            {list.map((image: any) => (
+                <img src={image.imageUrl} alt={image.name} class="w-full h-full object-cover" />
+            ))}
+          </div>
+        </div>
+        <div class="absolute inset-0 bg-gray-300 opacity-50"></div>
+        <div class="absolute w-[30%] h-full top-2/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white text-center bg-[#4D4846] py-10 px-4">
+            <div class="w-full h-full flex justify-center pt-[25%] items-start ">
+                <img src="./public/assets/Logos/PNG/Logos monocromaticos png/logo vertical verde medio.png" alt="Logo fundacion oportunidades">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <style>
+        @keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    12.5%{
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    37.5% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    62.5% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    87.5% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-slide {
+    animation: slide 25s linear infinite;
+}
+    </style>

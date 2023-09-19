@@ -7,9 +7,15 @@ import Layout from "../layouts/Layout.astro";
 import testimonials from "../data/testimonials";
 import indexText from "../data/indexText";
 import Mission from "../components/Mission.astro";
+import Slider from "../components/Slider.astro";
+import sliderList from "../data/sliderHome";
 ---
-
 <Layout title="Fundacion Oportunidades">
+  
+  <Slider 
+    list={sliderList}
+  /> 
+
   {
     indexText.map((t) => (
       <Mission
@@ -36,10 +42,10 @@ import Mission from "../components/Mission.astro";
   </section>
   <h1 class="title">Universidades adheridas</h1>
   <hr class="division-line" />
-  <Universities />
+  <!-- <Universities /> -->
   <h1 class="title">Empresas que confían en nosotros</h1>
   <hr class="division-line" />
-  <Companies />
+  <!-- <Companies /> -->
 </Layout>
 
 <style>

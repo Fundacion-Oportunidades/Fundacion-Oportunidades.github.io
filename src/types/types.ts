@@ -54,3 +54,8 @@ export interface WorkerCard {
   imageUrl: string;
   rank: string;
 }
+
+export interface ImageList {
+  name: string;
+  imageUrl: string;
+}

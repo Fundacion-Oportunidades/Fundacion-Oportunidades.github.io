@@ -1,11 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
 import Mission from "../components/Mission.astro";
 import missionList from "../data/mission";
 ---
 
 <Layout title="Sobre Nosotros">
+  <div class="flex space-x-3">
+    {
+      missionList.map((m) => (
+        <button class="text-xl font-bold hover:text-green-500 hover:border hover:border-green-500 p-2">
+          {m.title}
+        </button>
+      ))
+    }
+  </div>
+
   {
     missionList.map((m) => (
       <Mission
@@ -18,7 +27,7 @@ import missionList from "../data/mission";
 
   <section class="mission-card-container">
     <div class="mission-card">
-      <h1 class="box-main-title">Nuestros Valores:</h1>
+      <h1 class="box-main-title">Nuestros Valores</h1>
       <hr class="division-line" />
       <div class="text-container">
         <ul class="mini-box-container">
