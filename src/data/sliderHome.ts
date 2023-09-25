@@ -3,19 +3,19 @@ import type { ImageList } from "../types/types";
 const sliderList: ImageList[] = [
   {
     name: "Imposible 1",
-    imageUrl: "./public/assets/Recursos/JPG/3.png"
+    imageUrl: "./assets/Recursos/JPG/3.png"
   },
   {
     name: "Imposible 2",
-    imageUrl: "./public/assets/Recursos/JPG/lapiz imposible.png"
+    imageUrl: "./assets/Recursos/JPG/lapiz imposible.png"
   },
   {
     name: "Imposible 3",
-    imageUrl: "./public/assets/Recursos/JPG/pintor imposible.png"
+    imageUrl: "./assets/Recursos/JPG/pintor imposible.png"
   },
   {
     name: "Imposible 4",
-    imageUrl: "./public/assets/Recursos/JPG/pizarron imposible.png"
+    imageUrl: "./assets/Recursos/JPG/pizarron imposible.png"
   },
 
 ];
