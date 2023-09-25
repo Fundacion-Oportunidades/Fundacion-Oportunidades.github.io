@@ -3,14 +3,18 @@ import SocialMedia from "./SocialMedia.astro";
 ---
 
 <footer>
-  <SocialMedia />
+  <div class="w-full flex justify-center my-5">
+    <a href="/">
+      <img src="./public/assets/Logos/PNG/logo horizontal grises.png" alt="" class="h-[8vh] img-class">
+    </a>
+  </div>
   <ul class="footer-link-container">
-    <li><a href="/site" class="footer-link">Inicio</a></li>
+    <li><a href="/site" class="footer-link hover:text-[#fff]">Inicio</a></li>
     <li><a href="/site/scholarships" class="footer-link">Becas</a></li>
     <li><a href="/site/contact_us" class="footer-link">Contacto</a></li>
     <li><a href="/site/about_us" class="footer-link">Sobre nosotros</a></li>
   </ul>
-
+  
   <div class="footer-info">
     <div class="footer-text-container">
       <img
@@ -19,21 +23,22 @@ import SocialMedia from "./SocialMedia.astro";
       />
       <p class="footer-text">Ciudad Autónoma de Buenos Aires, Argentina</p>
     </div>
-    <div class="footer-text-container">
+    <!-- <div class="footer-text-container">
       <img
-        src="https://res.cloudinary.com/dsblswewr/image/upload/v1689807197/phone-icon_ubefox.png"
-        style={"width: 25px"}
+      src="https://res.cloudinary.com/dsblswewr/image/upload/v1689807197/phone-icon_ubefox.png"
+      style={"width: 25px"}
       />
       <p class="footer-text">999-999-9999</p>
-    </div>
+    </div> -->
     <div class="footer-text-container">
       <img
-        src="https://res.cloudinary.com/dsblswewr/image/upload/v1689807197/mail-icon_pausiy.png"
-        style={"width: 25px"}
+      src="https://res.cloudinary.com/dsblswewr/image/upload/v1689807197/mail-icon_pausiy.png"
+      style={"width: 25px"}
       />
       <p class="footer-text">info@fundacionoportunidades.org</p>
     </div>
   </div>
+  <SocialMedia />
 </footer>
 
 <style>
@@ -66,6 +71,7 @@ import SocialMedia from "./SocialMedia.astro";
 
   .footer-link:hover {
     transform: scale(1.2, 1.2);
+    color: #7bcb79
   }
 
   .footer-info {
@@ -105,4 +111,16 @@ import SocialMedia from "./SocialMedia.astro";
       justify-content: center;
     }
   }
+
+
+  .img-class {
+  transition: transform 0.3s; /* Agrega una transición suave para el cambio de imagen */
+}
+
+.img-class:hover {
+  transform: scale(1.1); 
+  content: url('./public/assets/Logos/PNG/isologotipo horizontal.png');
+}
+
+
 </style>

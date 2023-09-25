@@ -12,7 +12,7 @@ interface Props extends SocialMediaTypes {}
         <li>
           <a href={s.url} target="_blank">
             <img
-              src={s.imageUrlInactive}
+              src={s.imageUrlActive}
               alt={s.imageAlt}
               class={`social-icon ${s.imageAlt}`}
             />
@@ -52,11 +52,12 @@ interface Props extends SocialMediaTypes {}
   }
 
   img.facebook:hover {
-    content: url("https://res.cloudinary.com/dsblswewr/image/upload/v1685355460/face_azul_g84iel.png");
+    content: url("https://res.cloudinary.com/dsblswewr/image/upload/v1685355460/face_gris_ifzgrs.png");
   }
 
   img.twitter:hover {
-    content: url("https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/twitter_color_wozb2b.png");
+    content: url("./public/assets/Recursos/PNG/twitter-x-gris.png");
+    padding: 6px;
   }
 
   img.youtube:hover {
@@ -64,11 +65,11 @@ interface Props extends SocialMediaTypes {}
   }
 
   img.linkedin:hover {
-    content: url("https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/ln_azul_dqnmwn.png");
+    content: url("https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/ln_gris_k1nap3.png");
   }
 
   img.instagram:hover {
-    content: url("https://res.cloudinary.com/dsblswewr/image/upload/v1685355460/insta_color_mobgba.png");
+    content: url("https://res.cloudinary.com/dsblswewr/image/upload/v1685355460/insta_gris_xcva8o.png");
   }
 
   .button-container {

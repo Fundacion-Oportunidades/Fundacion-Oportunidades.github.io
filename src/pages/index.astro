@@ -25,9 +25,10 @@ import sliderList from "../data/sliderHome";
     ))
   }
 
-  <h1 class="title">Experiencias de algunos de nuestros becados</h1>
-  <hr class="division-line" />
-  <section class="testimonials-container">
+ <!-- Testimonios -->
+  <!-- <section class="testimonials-container">
+    <h1 class="title">Experiencias de algunos de nuestros becados</h1>
+    <hr class="division-line" />
     {
       testimonials.map((t) => (
         <Testimonial
@@ -38,13 +39,22 @@ import sliderList from "../data/sliderHome";
         />
       ))
     }
+  </section> -->
+  
+  <!-- Universidades Adheridas -->
+  <section class="container mx-auto">
+    <h1 class="title px-5">Universidades adheridas</h1>
+    <hr class="division-line" />
+    <Universities />
   </section>
-  <h1 class="title">Universidades adheridas</h1>
-  <hr class="division-line" />
+  
   <!-- <Universities /> -->
-  <h1 class="title">Empresas que confían en nosotros</h1>
-  <hr class="division-line" />
-  <!-- <Companies /> -->
+  <section class="container mx-auto">
+    <h1 class="title px-5">Empresas que confían en nosotros</h1>
+    <hr class="division-line" />
+    <Companies /> 
+  </section>
+  
 </Layout>
 
 <style>
@@ -69,20 +79,19 @@ import sliderList from "../data/sliderHome";
   }
   .division-line {
     background-color: green;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
     height: 2px;
-    width: 65vw;
   }
 
   .title {
-    font-family: "Libre Baskerville";
     font-size: 2rem;
     font-weight: bold;
+    font-size: 2.3rem;
     margin: 2rem 0 0 0;
   }
   @media only screen and (max-width: 768px) {
     .title {
-      font-family: "Libre Baskerville";
       font-size: 1.2rem;
       font-weight: bold;
       text-align: center;
