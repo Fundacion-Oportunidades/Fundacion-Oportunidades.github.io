@@ -33,9 +33,10 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <!-- <OfferHead /> -->
     <NavBar />
-    <slot />
+    <main style="margin-top: 10vh" class="w-full ">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

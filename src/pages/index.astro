@@ -3,7 +3,6 @@ import Companies from "../components/Companies.astro";
 import Testimonial from "../components/Testimonial.astro";
 import Universities from "../components/Universities.astro";
 import Layout from "../layouts/Layout.astro";
-
 import testimonials from "../data/testimonials";
 import indexText from "../data/indexText";
 import Mission from "../components/Mission.astro";
@@ -49,6 +48,16 @@ import sliderList from "../data/sliderHome";
 </Layout>
 
 <style>
+  @font-face{
+    font-family: "Mrs.Eaves";
+    src:url('/fonts/mrs-eaves/MRSEAV~5.TTF');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  body{
+    font-family: "Mrs.Eaves";
+  }
   .testimonials-container {
     display: flex;
     align-items: center;

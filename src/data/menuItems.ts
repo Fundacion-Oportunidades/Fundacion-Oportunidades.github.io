@@ -72,7 +72,7 @@ const menuItems: MenuItem[] = [
     url: "/site/contact_us",
   },
   {
-    title: "Ingresa",
+    title: "Solicita tu beca",
     url: "/site/register",
   },
 ];

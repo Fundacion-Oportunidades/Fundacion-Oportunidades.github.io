@@ -36,7 +36,7 @@ interface Props extends MenuItem {}
                 <button class="flex items-center nav-main-option">
                   <span
                     class={
-                      i.title === "Ingresa"
+                      i.title === "Solicita tu beca"
                         ? "login-button py-2 px-4  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
                         : "py-2 px-4  text-black w-full transition ease-in duration-200 text-center text-base font-semibold"
                     }
@@ -81,16 +81,17 @@ interface Props extends MenuItem {}
 </header>
 
 <style>
-  header {
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); /* Horizontal offset, Vertical offset, Blur radius, Shadow color with opacity */
+ header {
+    position: fixed; /* Establece el navbar como fijo */
+    top: 0; /* Lo fija en la parte superior de la ventana */
     width: 100vw !important;
+    height: 10vh;
     font-family: "Open Sauce Sans";
     margin-bottom: 20px;
-    /* position: fixed;
-    top: 0rem;
-    z-index: 2; */
-    /* background-color: rgba(239, 239, 239, 0.867); */
-  }
+    background-color: rgba(239, 239, 239, 0.867);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Asegura que esté encima del contenido */
+}
 
   .nav-main-option {
     /* padding: 2px 10px 2px 10px; */

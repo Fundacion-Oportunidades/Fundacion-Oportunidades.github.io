@@ -4,28 +4,28 @@ const { list } = Astro.props;
 
 <section class="h-[auto] sliderClass w-full relative">
     <div class="relative">
-        <div class=" h-full relative overflow-hidden">
-          <div class="flex animate-slide">
+        <div class="relative overflow-hidden">
+          <div class="flex animate-slide bg-gray-600 opacity-75 h-1/2">
             {list.map((image: any) => (
-                <img src={image.imageUrl} alt={image.name} class="w-full h-full object-cover" />
+                <img src={image.imageUrl} alt={image.name} class="w-full " />
             ))}
           </div>
         </div>
-        <div class="absolute inset-0 bg-gray-300 opacity-50"></div>
-        <div class="absolute w-[30%] h-full top-2/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white text-center bg-[#4D4846] py-10 px-4">
+        <!-- <div class="absolute inset-0 bg-gray-300 opacity-50"></div>
+        <div class="absolute w-[30%] h-full top-2/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white text-center bg-[#EFEFEF] py-10 px-4">
             <div class="w-full h-full flex justify-center pt-[25%] items-start ">
-                <img src="./public/assets/Logos/PNG/Logos monocromaticos png/logo vertical verde medio.png" alt="Logo fundacion oportunidades">
+                <img src="./public/assets/Logos/PNG/isologotipo vertical.png" alt="Logo fundacion oportunidades">
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
     <style>
-        @keyframes slide {
+    @keyframes slide {
     0% {
         transform: translateX(0);
     }
-    12.5%{
+    12.5% {
         transform: translateX(0);
     }
     25% {
@@ -49,9 +49,16 @@ const { list } = Astro.props;
     100% {
         transform: translateX(0);
     }
-}
+    }
+    .sliderClass {
+        overflow: hidden;
+        height: auto; 
+        width: 100vw; 
+    }
 
-.animate-slide {
-    animation: slide 25s linear infinite;
-}
+    .animate-slide {
+        display: flex; 
+        animation: slide 15s linear infinite; 
+    }
+
     </style>
