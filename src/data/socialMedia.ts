@@ -14,7 +14,7 @@ const socialMediaItems: SocialMediaTypes[] = [
     imageUrlInactive:
       "https://res.cloudinary.com/dsblswewr/image/upload/v1685355461/twitter_gris_bcfe4m.png",
     imageUrlActive:
-      "./public/assets/Recursos/PNG/twitter-x.png",
+      "./assets/Recursos/PNG/twitter-x.png",
     imageAlt: "twitter",
   },
   {
