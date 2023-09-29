@@ -2,13 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Mission from "../components/Mission.astro";
 import missionList from "../data/mission";
+import Slide from "../components/Slide.astro";
 ---
 
 <Layout title="Sobre Nosotros">
-  <div class="flex space-x-3">
+  <Slide list={missionList}/>
+  <div class="flex space-x-12 justify-center pt-5 ">
     {
       missionList.map((m) => (
-        <button class="text-xl font-bold hover:text-green-500 hover:border hover:border-green-500 p-2">
+        <button class="text-xl font-bold hover:text-green-500 hover:border hover:border-green-500 py-2 px-4 w-[7vw] h-[5vh]">
           {m.title}
         </button>
       ))
