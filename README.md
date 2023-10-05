@@ -1,7 +1,7 @@
 # Fundacion Oportunidades
 
 
-## Motivacion
+## Motivación
 
 Pagina de ejemplo, fundación Carolina
 https://www.fundacioncarolina.es/

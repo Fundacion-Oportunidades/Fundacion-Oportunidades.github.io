@@ -1,5 +1,5 @@
 
-# Deploy ApoloStack
+# Deploy OportunidadesStack
 
 No deployear todo junto, deployar y administrar por stack independientemente.
 
@@ -27,14 +27,14 @@ done
 ## Deployar
 
 ```sh
-cdk --profile dmob deploy ApoloRoute53Stack
+cdk --profile dmob deploy OportunidadesRoute53Stack
 
 # get the generated ZoneId, update the code --yes, this suckz
-cdk --profile dmob deploy ApoloCertificateStack
+cdk --profile dmob deploy OportunidadesCertificateStack
 
 # get the certificate ARN, update the code --yes, this suckz
-cdk --profile dmob deploy ApoloCloudFrontS3Stack
+cdk --profile dmob deploy OportunidadesCloudFrontS3Stack
 
 # get the CF distribution id and domain_name, update the code --yes, this suckz
-cdk --profile dmob deploy ApoloCloudFrontS3Stack
+cdk --profile dmob deploy OportunidadesCloudFrontS3Stack
 ```
