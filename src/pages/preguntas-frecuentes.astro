@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FAQS from "../data/FAQ";
+import AsideBecas from "../components/AsideBecas.astro";
+---
+
+<Layout title="Preguntas frecuentes">
+  <section class="flex">
+    <AsideBecas/>
+    <div class="min-h-[70vh] w-[80%] mt-6 px-10"
+      <div class="faq-container">
+        <h1 class="text-4xl font-bold">Preguntas frecuentes</h1>
+        <div class="division-line"></div>
+        {
+          FAQS.map((i) => (
+            <div class="faq-item">
+              <h2>{i.question}</h2>
+              <p>{i.answer}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>  
+  </section>
+  
+</Layout>
+
+<style>
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+  }
+  .faq-item {
+    margin-bottom: 3rem;
+  }
+
+  .faq-item h2 {
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  .faq-item p {
+    margin-top: 1rem;
+  }
+</style>

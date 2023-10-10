@@ -7,16 +7,16 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Sobre nosotros",
-        url: "/site/about_us",
+        url: "/site/sobre-nosotros",
       },
-      {
-        title: "Consejo asesor",
-        url: "/site/council",
-      },
-      {
-        title: "Equipo",
-        url: "/site/team",
-      },
+      // {
+      //   title: "Consejo asesor",
+      //   url: "/site/council",
+      // },
+      // {
+      //   title: "Equipo",
+      //   url: "/site/team",
+      // },
     ],
   },
   {
@@ -25,27 +25,27 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Presentación",
-        url: "/site/presentation",
+        url: "/site/becas-de-formacion",
       },
       {
         title: "Cómo solicitar becas",
-        url: "/site/how_to",
+        url: "/site/como-solicitar-becas",
       },
       {
         title: "Cómo trabajamos",
-        url: "/site/how_we_work",
+        url: "/site/como-trabajamos",
       },
       {
         title: "Criterios de valoración",
-        url: "/site/criteria",
+        url: "/site/criterios-de-valoracion",
       },
       {
         title: "Becas disponibles",
-        url: "/site/scholarships",
+        url: "/site/becas-disponibles",
       },
       {
         title: "Preguntas frecuentes",
-        url: "/site/FAQ",
+        url: "/site/preguntas-frecuentes",
       },
     ],
   },
@@ -55,25 +55,27 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Presentación",
-        url: "/site/net_presentation",
+        url: "/site/red-de-oportunidades",
       },
-      {
-        title: "Networking",
-        url: "/site/networking",
-      },
-      {
-        title: "Ofertas laborales",
-        url: "/site/job_openings",
-      },
+      // {
+      //   title: "Networking",
+      //   url: "/site/networking",
+      // },
+      // {
+      //   title: "Ofertas laborales",
+      //   url: "/site/job_openings",
+      // },
     ],
   },
   {
     title: "Contacto",
-    url: "/site/contact_us",
+    url: "/site/contacto",
+    options:[]
   },
   {
-    title: "Solicita tu beca",
-    url: "/site/register",
+    title: "Solicitá tu beca",
+    url: "/site/",
+    options:[]
   },
 ];
 

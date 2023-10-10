@@ -1,6 +1,28 @@
----
-import Mission from "./Mission.astro";
-import criteria from "../data/valuesCriteria";
----
 
-{criteria.map((c) => <Mission title={c.title} paragraphs={c.paragraphs} />)}
+<div>
+    <div class="my-10">
+        <div class="w-full my-5">
+            <div class="w-full ">
+                <h1 class="text-3xl font-bold ">Nuestros Criterios de Selección</h1> 
+            </div>
+            <div class="container mx-auto">
+                <div class="division-line "></div> 
+            </div>
+        </div>
+        <div class="mt-5 text-base">
+            <div class="container mx-auto Becas-Formacion">
+                <p>En primer punto, debemos aclararte que nuestras becas son limitadas.</p>
+                <p>Por ello, una vez que apliques a una beca, ingresas en el proceso de selección. Es decir, aplicar a una beca no te garantiza que la vas a obtener de manera automática.</p>
+                <p>El primer criterio que tenemos en cuenta para hacer nuestra selección, es el rendimiento académico. Es decir, para obtener una beca, debes haber tenido buen promedio en el colegio.</p>
+                <p>Tranquilo/a, sabemos que probablemente apliques a una beca sin haber terminado el colegio. Por eso, te vamos a pedir que nos facilites el boletín del anteúltimo año de colegio, y/o el boletín del último mes de colegio que tengas disponible.</p>
+                <p>Nosotros vamos a hacer un ranking con los promedios.</p>
+                <p>Nuestro segundo criterio es la situación económica del postulante. Así que, a los que hayan sido seleccionados por promedio, los contactaremos para profundizar en este aspecto.                </p>
+                <p>Tené en cuenta que el espíritu de Fundación Oportunidades es el de ofrecer becas de estudio superior a personas de bajos recursos, es decir, darle una oportunidad a aquellas personas que de otra manera no podrían acceder a ella. Si tenés un buen pasar económico, te pedimos que no apliques a becas porque no vas a ser tenido en cuenta.</p>
+                <p>Una vez crucemos los datos de promedio con situación económica, se evaluará y otorgarán becas a los solicitantes seleccionados.</p>
+                <p>Asimismo, si solicitaste un estipendio económico como ayuda, esa información que nos facilitaste nos va a servir para tomar una decisión si te ofrecemos un apoyo económico del 100%, del 75%, del 50% o del 25%.</p>
+                <p>Si tenés alguna duda, con gusto recibiremos tus consultas en nuestro correo institucional <a href="mailto:informacion@oportunidades.org.ar" class="font-bold italic hover:text-[#48A750]">informacion@oportunidades.org.ar</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -9,6 +9,7 @@ const howWeWork: TextCardItems[] = [
       "    A este respecto, la FO ha seleccionado las carreras terciarias y de grado,    universidades y centros de formación de excelencia con los que colabora    según criterios objetivos, a partir de sus méritos y capacidades y seguirá    acudiendo al principio de excelencia académica en el proceso de adjudicación    de las becas. No obstante, la FO no se limita a reconocer el desempeño    académico o profesional de las candidaturas a beca: en coherencia con su    mandato fundacional y de las agendas de responsabilidad social de las    empresas que componen su Consejo Asesor, se contribuirá asimismo a promover    la generación de valor social por parte de las personas beneficiarias de las    becas.",
       "   Por otro lado, con el acompañamiento que se realiza a cada beneficiario, se    pretende inculcar valores tales como el respeto, la tolerancia, la    cooperación, el mérito, la transparencia.",
     ],
+    urlImage: ""
   },
   {
     title: "Publicación de la convocatoria",
@@ -16,6 +17,8 @@ const howWeWork: TextCardItems[] = [
       "Se realiza a través de la página web de la Fundación, mediante una    plataforma en la que los candidatos pueden postularse y acceder a una    información detallada y pormenorizada de las becas, comprobando sus    requisitos, plazos de presentación, dotación económica y un detalle    específico del programa académico.",
       "Toda persona interesada en participar en el proceso de selección de la    Fundación Oportunidades puede darse fácilmente de alta introduciendo y    modificando sus datos e incluyendo su CV a través de la solicitud on-line.",
     ],
+    urlImage: ""
+
   },
   {
     title: "Selección de candidatos",
@@ -24,6 +27,8 @@ const howWeWork: TextCardItems[] = [
       '"A continuación, la Fundación Oportunidades recurre al <a href="/site/council">Consejo Asesor</a    >, quienes aportan su experiencia y conocimiento y definen a los candidatos    más preparados. Tras ello, el equipo de la FO procede a realizar entrevistas    (online) de aproximadamente media hora de duración a cada candidato."',
       "   Finalmente se realiza la selección, supervisada por la dirección de la    institución.",
     ],
+    urlImage: ""
+
   },
   {
     title:
@@ -32,6 +37,8 @@ const howWeWork: TextCardItems[] = [
       "El equipo de gestión de la FO comunica personalmente por correo electrónico    a cada beneficiario de su beca. Desde ese momento, el becario entra a formar    parte de la Red de Oportunidades, una plataforma que conecta a toda persona    que haya sido seleccionado como becario por la Fundación desde su creación. ",
       "Una vez establecido el contacto con el becario, se da comienzo al proceso de    reuniones grupales donde se promueve el conocimiento y la integración de    todos los becarios para que puedan ayudarse mutuamente en su estancia,    además de intercambiar experiencias. Seguimiento y acompañamiento El equipo    pedagógico de la Fundación Oportunidades es el encargado de realizar el    seguimiento pertinente a cada becario, tanto en lo emocional como en las    cuestiones prácticas que hacen al sostenimiento de la beca.",
     ],
+    urlImage: ""
+
   },
 ];
 

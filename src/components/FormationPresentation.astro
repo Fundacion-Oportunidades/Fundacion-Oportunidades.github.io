@@ -1,10 +1,52 @@
 ---
-import Mission from "./Mission.astro";
 import formationPresentation from "../data/valuesFormationPresentation";
 ---
-
 {
   formationPresentation.map((p) => (
-    <Mission title={p.title} paragraphs={p.paragraphs} />
+      <div class="min-h-[70vh] w-[80%] mt-6 px-10">
+        <div class="w-full">
+          <div class="w-full text-center  ">
+            <h1 class="text-4xl font-bold ">{p.title}</h1> 
+          </div>
+          <div class="container mx-auto">
+            <div class="division-line "></div> 
+          </div>
+        </div>
+      
+      <div class="mt-5">
+        <div class="container mx-auto text-base space-y-1">
+            <p>En Argentina existen 1298 municipios. En prácticamente todos ellos existe un colegio donde los jóvenes de cada pueblo o ciudad pueden asistir para recibir su educación primaria. Algunos de estos municipios no cuentan con establecimientos de educación secundaria. Y muchos de estos municipios no cuentan con establecimientos de educación superior o universitaria.</p>
+            <p>Teniendo esto en consideración, y sumando que las condiciones económicas de gran parte de la población argentina no le permite a las familias enviar a sus hijos a una ciudad donde puedan estudiar carreras terciarias o licenciaturas, es que nace Fundación Oportunidades.</p>
+            <div class="w-full flex">
+              <div class="w-1/2">
+                <p>La fundación se crea para que aquellos/as jóvenes con buen rendimiento académico, bajos recursos económicos, y oriundos/as de todo el país puedan acceder a educación universitaria privada de manera gratuita.</p>  
+                <p>Lo que se pretende, entonces, es crear oportunidades, para que los jóvenes de nuestro país puedan cumplir sus sueños y estudiar las carreras que ellos/as eligen para su futuro.</p>
+                <p>Las becas que ofrecemos desde Fundación Oportunidades están otorgadas al 100% por la universidad que recibe al estudiante.Todas nuestras becas incluyen la matrícula y la cuota mensual de la casa de estudios.</p>
+                <p>Asimismo, parte de nuestras becas cuentan también con un estipendio mensual del 100% (640 dólares mensuales, en pesos, al precio oficial), del 75% (480 dólares mensuales, en pesos, al precio oficial), del 50% (320 dólares mensuales, en pesos, al precio oficial), y del 25% (160 dólares mensuales, en pesos, al precio oficial)</p>
+                <p>Si querés saber qué carreras podemos becar, hacé <a href="site/becas-disponibles" class="text-cyan-700">click acá</a>.</p>
+                <p>Si querés saber cómo solicitar una beca, hacé <a href="site/como-solicitar-becas" class="text-cyan-700">click acá</a>.</p>
+              </div>
+              <div class="w-1/2">
+                <img src={p.urlImage} alt={p.title}>  
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>    
+
   ))
 }
+
+<style>
+  .division-line {
+    background-color: green;
+    height: 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .Becas-Formacion p{
+    font-size: 1.2rem;
+    line-height: 1.3; 
+  }
+</style>

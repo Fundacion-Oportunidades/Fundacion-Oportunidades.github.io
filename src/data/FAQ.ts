@@ -3,7 +3,7 @@ import type { FAQ } from "../types/types";
 const FAQS: FAQ[] = [
   {
     question:
-      "¿Cuál es el proceso de solicitud de becas para estudiar en el exterior?",
+      "¿Cuál es el proceso de solicitud para aplicar a una beca?",
     answer:
       "El proceso de solicitud de becas consta de varios pasos. Primero, debes completar y enviar el formulario de solicitud en línea, proporcionando información sobre tu historial académico, logros y motivación para estudiar en el extranjero. Luego, tu solicitud será revisada por nuestro equipo de selección y, si cumples con los requisitos, podrías ser invitado(a) a una entrevista. Finalmente, se tomará una decisión basada en la entrevista y la evaluación de tu solicitud.",
   },

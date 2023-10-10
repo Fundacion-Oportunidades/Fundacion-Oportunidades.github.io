@@ -1,0 +1,35 @@
+---
+const { pathname } = Astro.url
+import becasAside from "../data/pagesBecas"
+---
+
+<div class="w-[20%] h-screen">
+    <div class="fixed mt-[5%] h-full w-[20%] ">
+      <div class="flex flex-wrap justify-center">
+        <h2 class="font-bold text-xl">Links rapidos</h2>
+        <div class="division-line w-[80%]"></div>
+        <div class="grid text-center space-y-2 italic font-bold">
+          {becasAside.map((link:any)=>{
+            if(pathname === link.url){
+              return (
+                <a class="text-[#48A750]">{link.title}</a>
+              )
+            }else {
+              return <a href={link.url} class="hover:text-[#48A750]">{link.title}</a>
+            }
+          })}
+        </div> 
+      </div>
+      
+    </div>
+  </div>
+
+
+  <style>
+     .division-line {
+    background-color: green;
+    height: 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  </style>

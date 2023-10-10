@@ -2,9 +2,92 @@
 import Mission from "./Mission.astro";
 import valuesHowToApply from "../data/valuesHowToApply";
 ---
+  <section>
+    <div class="my-10">
+      <div class="w-full my-5">
+        <div class="w-full ">
+          <h1 class="text-3xl font-bold ">¿Comó solicito una beca?</h1> 
+        </div>
+        <div class="container mx-auto">
+          <div class="division-line "></div> 
+        </div>
+      </div>
+      <div class="mt-5 text-base">
+        <div class="container mx-auto Becas-Formacion">
+          <p>Para solicitar una beca, tenés que hacer click en el botón de arriba a la derecha, donde dice “Solicitá tu beca”, y completar el formulario de inscripción.</p>
+          <p> El formulario consta de 3 etapas:</p>
+          <ul class="list-disc ps-5">
+            <li>Datos personales</li>
+            <li>Información Académica</li>
+            <li>Información Económica</li>
+          </ul>
+          <p>Tené en cuenta que el formulario se completa en un mismo momento. Es decir, no vas a tener la posibilidad de dejar el formulario a medias y completarlo otro día, por lo tanto te recomendamos tener a mano todos los datos y archivos necesarios para completarlo.</p>
+        </div>
+      </div>
+    </div>
 
-{
-  valuesHowToApply.map((p) => (
-    <Mission title={p.title} paragraphs={p.paragraphs} />
-  ))
-}
+    <div class="my-10">
+      <div class="w-full my-5">
+        <div class="w-full ">
+          <h1 class="text-3xl font-bold ">¿Cuáles son los requisitos para solicitar una beca?</h1> 
+        </div>
+        <div class="container mx-auto">
+          <div class="division-line "></div> 
+        </div>
+      </div>
+      <div class="mt-5  text-base">
+        <div class="container mx-auto Becas-Formacion">
+          <p>El primer requisito es que tengas buen promedio en tu historial académico en el colegio. No se le otorgará una beca a aquellos alumnos con promedio menor a 7.</p>
+          <p>El segundo requisito es que no tengas sanciones disciplinarias en el colegio. No se le otorgará una beca a aquellos que tengan sanciones disciplinarias.</p>
+          <p>Además, al completar el formulario deberás cargar:</p>
+          <ul class="list-disc ps-5">
+            <li>Escaneo del último boletín disponible, en formato PDF o imagen.            </li>
+            <li>2 cartas de recomendación, pudiendo ser de profesores o Director/a del colegio, con firma a mano de la persona, nombre completo, cargo, mail y teléfono. En formato PDF o imagen. La carta debe hablar sobre tu capacidad académica, tu compromiso, tu actitud y tu honestidad, y debe informarnos si las actividades extracurriculares afectan tu rendimiento académico</li>
+            <li>Una carta de motivación, donde nos cuentes por qué debemos becarte. Acá te dejamos algunas preguntas que pueden guiarte para hacer la carta: ¿Por qué quiero estudiar en otra ciudad? ¿Por qué quiero estudiar esta carrera? ¿A dónde quiero llegar en el largo plazo? ¿Cuál es mi sueño profesional?, y todo lo que creas que tenes que contarnos sobre vos. Máximo 2 páginas.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-10">
+      <div class="w-full">
+        <div class="w-full ">
+          <h1 class="text-3xl font-bold ">¿Por qué cargar los datos y archivos es necesario para aplicar a las becas?</h1> 
+        </div>
+        <div class="container mx-auto">
+          <div class="division-line "></div> 
+        </div>
+      </div>
+      <div class="mt-5  text-base">
+        <div class="container mx-auto Becas-Formacion">
+          <div class="flex flex-wrap">
+            <p>Porque sin tus datos y los archivos que te pedimos, no podemos evaluar tu postulación, en base a nuestros <a href="/site/criterios-de-valoracion" class="font-bold italic ms-1 hover:text-[#48A750]"> criterios de selección</a></p>
+          </div>        
+          <p>Una vez que hayas completado el proceso de carga de datos y archivos, vas a poder aplicar a las becas.</p>
+        </div>
+              
+      </div>
+    </div>
+
+    <div class="my-10">
+      <div class="w-full">
+        <div class="w-full ">
+          <h1 class="text-3xl font-bold ">¿Qué posibilidades de beca tenés para aplicar?</h1> 
+        </div>
+        <div class="container mx-auto">
+          <div class="division-line "></div> 
+        </div>
+      </div>
+      <div class="mt-5  text-base">
+        <div class="container mx-auto Becas-Formacion">
+          <div class="flex flex-wrap">
+            <p>En términos educativos, podes aplicar a cualquier carrera terciaria o licenciatura que ofrezcamos. Si vas a aplicar a una beca, tenés que estar seguro que esa es la carrera que querés estudiar.</p>
+            <p>Si no estás seguro de qué carrera querés estudiar, todavía no apliques a una beca, y escribinos un mail a <a href="mailto:informacion@oportunidades.org.ar" class="font-bold italic hover:text-[#48A750]">informacion@oportunidades.org.ar</a> </p>
+          </div>        
+          <p>En términos económicos, sencillamente tenés dos opciones: solicitar un estipendio económico o no solicitarlo. Para ello, apelamos a tu sinceridad, es decir, considerá que si te damos un estipendio económico por mes a vos, no se lo estamos dando a otra persona que quizá lo necesita más que vos. Por eso es importante ser sincero. ¿Sin el estipendio, podrías mantenerte viviendo en otra ciudad?          </p>
+        </div>
+              
+      </div>
+    </div>
+  </section>
+      

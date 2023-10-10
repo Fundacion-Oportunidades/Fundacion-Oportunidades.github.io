@@ -1,0 +1,121 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact Us">
+  <div class="container mx-auto flex">
+    
+    <div class="w-1/2">
+      <div class="pt-5">
+        <h1 class="text-3xl font-bold ">Formulario de contacto</h1>
+        <div class="division-line "></div> 
+        <p>
+          La Fundación Oportunidades se enorgullece de servir a nuestra comunidad y promover el acceso a oportunidades educativas. Estamos aquí para escuchar tus preguntas, comentarios y sugerencias.
+         </p><p>  Por favor, completa el siguiente formulario de contacto y estaremos encantados de ayudarte en lo que necesites. Juntos, podemos construir un mejor futuro
+        </p>
+      </div>
+      <form class="w-[100%]  flex justify-center items-center flex-wrap my-10">
+        <div class="w-3/4 md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label
+              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+              for="inline-full-name"
+            >
+              Nombre
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+              id="inline-full-name"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="w-3/4 md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label
+              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+              for="inline-full-name"
+            >
+              E-mail
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+              id="inline-full-name"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="w-3/4 md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label
+              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+              for="inline-full-name"
+            >
+              Asunto
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+              id="inline-full-name"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="w-3/4 md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label
+              class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-6"
+              for="inline-full-name"
+            >
+              Mensaje
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <textarea
+              class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+              id="inline-full-name"
+              rows="5"></textarea>
+          </div>
+        </div>
+      </form>
+  
+      <div class="button-container w-full flex justify-center items-center">
+        <button
+          class=" w-1/2 py-2 px-4 bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg margin-bottom-xl"
+          type="button"
+        >
+          Enviar
+        </button>
+      </div>
+    </div>
+    <div class="w-1/2 flex justify-center items-center">
+      <img class="w-3/4" src="https://firebasestorage.googleapis.com/v0/b/fundacion-oportunidades.appspot.com/o/Assets%2FRecursos%2FPNG%2FMessage_sent.png?alt=media&token=87a32e65-9ebc-4498-95a4-e1a6c55d2a2b" alt="">
+    </div>
+  </div>
+</Layout>
+<style>
+  .contact-us-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-us-form {
+    font-family: "Open Sauce Sans";
+    padding: 2rem 0 2rem 0;
+    width: 70vw !important;
+  }
+  .button-submit {
+    width: 10rem !important;
+  }
+  @media only screen and (max-width: 768px) {
+    .contact-us-form {
+      width: 90vw !important;
+    }
+  }
+</style>

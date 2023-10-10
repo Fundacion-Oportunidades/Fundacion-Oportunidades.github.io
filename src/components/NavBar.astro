@@ -36,14 +36,12 @@ interface Props extends MenuItem {}
                 <button class="flex items-center nav-main-option">
                   <span
                     class={
-                      i.title === "Solicita tu beca"
+                      i.title === "Solicitá tu beca"
                         ? "login-button py-2 px-4  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
                         : "py-2 px-4  text-black w-full transition ease-in duration-200 text-center text-base font-semibold"
                     }
                   >
-                    {i.title === "Ingresa" ? (
-                      <a href={i.url}>{i.title}</a>
-                    ) : i.title === "Contacto" ? (
+                    {(i.title === "Ingresa" || i.title === "Contacto" || i.title === "Solicitá tu beca" ) ? (
                       <a href={i.url}>{i.title}</a>
                     ) : (
                       i.title

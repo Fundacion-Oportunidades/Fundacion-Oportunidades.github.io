@@ -48,8 +48,8 @@ export interface Mission {
 export interface TextCardItems {
   title: string;
   paragraphs: string[];
+  urlImage: string;
 }
-
 export interface WorkerCard {
   name: string;
   imageUrl: string;

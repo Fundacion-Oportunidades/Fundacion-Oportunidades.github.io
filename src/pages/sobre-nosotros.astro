@@ -1,0 +1,180 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Mission from "../components/Mission.astro";
+import missionList from "../data/mission";
+import Slide from "../components/Slide.astro";
+---
+
+<Layout title="Sobre Nosotros">
+  {
+    missionList.map((m) => (
+      <Mission
+        title={m.title}
+        paragraphs={m.paragraphs}
+        imageUrl={m.imageUrl}
+      />
+    ))
+  }
+
+  <section class="mission-card-container">
+    <div class="mission-card">
+      <h1 class="box-main-title">Nuestros Valores</h1>
+      <hr class="division-line" />
+      <div class="text-container">
+        <ul class="mini-box-container">
+          <li class="li-box">
+            Equidad <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/equidad_st8twu.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Inclusión <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/inclusion_njctpy.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Transparencia <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/transparencia_evzm0n.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Impacto <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958072/impacto_nvq5gz.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Cooperación <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/cooperacion_jixb74.png"
+              class="card-mini-img"
+            />
+          </li>
+          <li class="li-box">
+            Mérito <img
+              src="https://res.cloudinary.com/dsblswewr/image/upload/v1689958073/merito_qopdqs.png"
+              class="card-mini-img"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .mission-card-container {
+    opacity: 1;
+    margin: 1rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+  }
+
+  .division-line {
+    background-color: green;
+    margin: 1rem;
+    height: 2px;
+    width: 65vw;
+  }
+
+  .mission-card {
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 5px;
+    padding: 3rem 5rem 3rem 5rem;
+  }
+  .mini-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box-main-title {
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .card-mini-img {
+    height: 8rem;
+    margin: 1rem;
+    /* color: green; */
+  }
+  .li-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    font-size: 2rem;
+    font-family: "Open Sauce Sans";
+    border-radius: 15px;
+    opacity: 1;
+    margin: 1rem;
+    padding: 3rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .li-box:hover {
+    transform: scale(1.1);
+    background-color: rgb(74, 168, 81);
+    color: white;
+  }
+  @media only screen and (max-width: 768px) {
+    .box-main-title {
+      font-size: 1.5rem;
+    }
+    .text-container {
+      padding: 1rem 0 0 0;
+      margin: 0;
+      width: 100vw;
+    }
+    .mini-box-container {
+      margin: 0;
+    }
+    .li-box {
+      width: 150px;
+      height: 150px;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+</style>
+
+
+<script>
+  document.querySelector('[data-scroll-to]').addEventListener('click', function (e) {
+  e.preventDefault();
+  const targetSelector = this.getAttribute('data-scroll-to');
+  const targetElement = document.querySelector(targetSelector);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+</script>
