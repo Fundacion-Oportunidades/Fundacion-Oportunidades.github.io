@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import FAQS from "../data/FAQ";
+import Faqs from "../components/Faqs.astro";
 import AsideBecas from "../components/AsideBecas.astro";
 ---
 
@@ -11,14 +11,7 @@ import AsideBecas from "../components/AsideBecas.astro";
       <div class="faq-container">
         <h1 class="text-4xl font-bold">Preguntas frecuentes</h1>
         <div class="division-line"></div>
-        {
-          FAQS.map((i) => (
-            <div class="faq-item">
-              <h2>{i.question}</h2>
-              <p>{i.answer}</p>
-            </div>
-          ))
-        }
+        <Faqs />
       </div>
     </div>  
   </section>

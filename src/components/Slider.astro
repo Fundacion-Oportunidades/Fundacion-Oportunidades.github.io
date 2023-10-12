@@ -25,29 +25,29 @@ const { list } = Astro.props;
     0% {
         transform: translateX(0);
     }
-    12.5% {
+    /* 12.5% {
         transform: translateX(0);
-    }
+    } */
     25% {
-        transform: translateX(-100%);
+        transform: translateX(0%);
     }
-    37.5% {
+    /* 37.5% {
         transform: translateX(-100%);
-    }
+    } */
     50% {
-        transform: translateX(-200%);
+        transform: translateX(-100%);
     }
-    62.5% {
+    /* 62.5% {
         transform: translateX(-200%);
-    }
+    } */
     75% {
-        transform: translateX(-300%);
+        transform: translateX(-100%);
     }
-    87.5% {
+    /* 87.5% {
         transform: translateX(-300%);
-    }
+    } */
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
     }
     .sliderClass {
@@ -58,7 +58,7 @@ const { list } = Astro.props;
 
     .animate-slide {
         display: flex; 
-        animation: slide 15s linear infinite; 
+        animation: slide 8s linear infinite; 
     }
 
     </style>

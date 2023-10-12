@@ -2,7 +2,7 @@
 const { title, paragraphs, imageUrl } = Astro.props;
 ---
 
-<section class="container w-screen mx-auto my-5 missionClass max-h-[50vh]"  id={`${title} `}>
+<section class="container w-screen mx-auto my-5 missionClass"  id={`${title} `}>
   <div class="px-10">
     <div class="flex text-center justify-start ps-5">
       <h2 class="mission-title ">
@@ -31,7 +31,7 @@ const { title, paragraphs, imageUrl } = Astro.props;
           })
         }
       </div>
-      <div class="w-1/2  flex justify-center max-h-[50vh]">
+      <div class="w-1/2  flex justify-center items-center">
         <img src={imageUrl} class="w-auto h-[35vh] object-contain ">
       </div>
     </div>
