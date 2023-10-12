@@ -13,28 +13,30 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+- Copiar el `.env` correspondiente 
 - Bootstapear CDK en todas las regiones. **Hacer esto una sola vez, no rehacerlo!**
 
 
 ```sh
-account_number=<obtener el id del perfil>
-for region in us-east-1 eu-south-2
+source .env
+
+for region in us-east-1 us-east-2 sa-east-1
 do
-	cdk --profile dmob aws://${account_number}/${region}
+	cdk --profile developer bootstrap aws://${account_number}/${region}
 done
 ```
 
 ## Deployar
 
 ```sh
-cdk --profile dmob deploy OportunidadesRoute53Stack
+cdk --profile developer deploy OportunidadesRoute53Stack
 
 # get the generated ZoneId, update the code --yes, this suckz
-cdk --profile dmob deploy OportunidadesCertificateStack
+cdk --profile developer deploy OportunidadesCertificateStack
 
 # get the certificate ARN, update the code --yes, this suckz
-cdk --profile dmob deploy OportunidadesCloudFrontS3Stack
+cdk --profile developer deploy OportunidadesCloudFrontS3Stack
 
 # get the CF distribution id and domain_name, update the code --yes, this suckz
-cdk --profile dmob deploy OportunidadesCloudFrontS3Stack
+cdk --profile developer deploy OportunidadesCloudFrontS3Stack
 ```

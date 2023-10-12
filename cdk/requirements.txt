@@ -2,3 +2,4 @@ aws-cdk-lib==2.79.1
 constructs>=10.0.0,<11.0.0
 aws_cdk.aws_route53==1.201.0
 aws_solutions_constructs.aws_cloudfront_s3==v2.39.0
+python-dotenv
