@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 .vscode/
 
+cdk/cdk.context.json
+cdk/dist/
+cdk/dist.zip
