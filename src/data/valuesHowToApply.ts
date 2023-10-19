@@ -13,7 +13,7 @@ const howToApply: TextCardItems[] = [
     title:
       "¿Por qué cargar los datos y archivos es necesario para aplicar a las becas?",
     paragraphs: [
-      'Porque sin tus datos y los archivos que te pedimos, no podemos evaluar tu    postulación, en base a nuestros <a href="/site/criteria">criterios de selección</a>',
+      'Porque sin tus datos y los archivos que te pedimos, no podemos evaluar tu    postulación, en base a nuestros <a href="/criteria">criterios de selección</a>',
       'Una vez que hayas completado el proceso de carga de datos y archivos, vas a    poder aplicar a las becas.',
     ],
     urlImage: ""
