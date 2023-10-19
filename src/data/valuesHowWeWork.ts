@@ -24,7 +24,7 @@ const howWeWork: TextCardItems[] = [
     title: "Selección de candidatos",
     paragraphs: [
       "Una vez cerrado el plazo de postulación, la FO abre un estricto proceso de    selección, asegurando la aplicación de los criterios y parámetros objetivos    establecidos en las bases de la convocatoria. El proceso pasa por distintos    filtros: una primera criba técnica desecha a los candidatos que no se    ajustan a las exigencias fundamentales.",
-      '"A continuación, la Fundación Oportunidades recurre al <a href="/site/council">Consejo Asesor</a    >, quienes aportan su experiencia y conocimiento y definen a los candidatos    más preparados. Tras ello, el equipo de la FO procede a realizar entrevistas    (online) de aproximadamente media hora de duración a cada candidato."',
+      '"A continuación, la Fundación Oportunidades recurre al <a href="/council">Consejo Asesor</a    >, quienes aportan su experiencia y conocimiento y definen a los candidatos    más preparados. Tras ello, el equipo de la FO procede a realizar entrevistas    (online) de aproximadamente media hora de duración a cada candidato."',
       "   Finalmente se realiza la selección, supervisada por la dirección de la    institución.",
     ],
     urlImage: ""

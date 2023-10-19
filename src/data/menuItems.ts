@@ -7,15 +7,15 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Sobre nosotros",
-        url: "/site/sobre-nosotros",
+        url: "/sobre-nosotros",
       },
       // {
       //   title: "Consejo asesor",
-      //   url: "/site/council",
+      //   url: "/council",
       // },
       // {
       //   title: "Equipo",
-      //   url: "/site/team",
+      //   url: "/team",
       // },
     ],
   },
@@ -25,27 +25,27 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Presentación",
-        url: "/site/becas-de-formacion",
+        url: "/becas-de-formacion",
       },
       {
         title: "Cómo solicitar becas",
-        url: "/site/como-solicitar-becas",
+        url: "/como-solicitar-becas",
       },
       {
         title: "Cómo trabajamos",
-        url: "/site/como-trabajamos",
+        url: "/como-trabajamos",
       },
       {
         title: "Criterios de valoración",
-        url: "/site/criterios-de-valoracion",
+        url: "/criterios-de-valoracion",
       },
       {
         title: "Becas disponibles",
-        url: "/site/becas-disponibles",
+        url: "/becas-disponibles",
       },
       {
         title: "Preguntas frecuentes",
-        url: "/site/preguntas-frecuentes",
+        url: "/preguntas-frecuentes",
       },
     ],
   },
@@ -55,26 +55,26 @@ const menuItems: MenuItem[] = [
     options: [
       {
         title: "Presentación",
-        url: "/site/red-de-oportunidades",
+        url: "/red-de-oportunidades",
       },
       // {
       //   title: "Networking",
-      //   url: "/site/networking",
+      //   url: "/networking",
       // },
       // {
       //   title: "Ofertas laborales",
-      //   url: "/site/job_openings",
+      //   url: "/job_openings",
       // },
     ],
   },
   {
     title: "Contacto",
-    url: "/site/contacto",
+    url: "/contacto",
     options:[]
   },
   {
     title: "Solicitá tu beca",
-    url: "/site/",
+    url: "/",
     options:[]
   },
 ];
