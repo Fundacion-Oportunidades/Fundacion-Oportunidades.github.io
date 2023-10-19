@@ -5,13 +5,13 @@ const isDevelopment = process.env.NODE_ENV === "development";
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/site/",
-  site: "https://oportunidades.org.ar",
+  base: "/",
+  site: "https://oportunidades.org.ar/",
   trailingSlash: "never",
-  routes: {
-    "/site/": "./src/pages/index.astro",
-    "/site/about_us/": "./src/pages/about_us.astro",
-  },
+  // routes: {
+  //  "/site/": "./src/pages/index.astro",
+  //  "/site/about_us/": "./src/pages/about_us.astro",
+  //},
   server: {
     port: 3050,
   },
