@@ -6,7 +6,7 @@ const isDevelopment = process.env.NODE_ENV === "development";
 // https://astro.build/config
 export default defineConfig({
   base: "/site/",
-  site: "https://fundacion-oportunidades.github.io/site/",
+  site: "https://oportunidades.org.ar",
   trailingSlash: "never",
   routes: {
     "/site/": "./src/pages/index.astro",
