@@ -3,7 +3,7 @@ import type { Universities } from "../types/types";
 const universities: Universities[] = [
   {
     imageUrl:
-      "assets/Universidades/UAI-03.png",
+      "/assets/Universidades/UAI-03.png",
     imageAlt: "Universidad Abierta Interamericana",
     url: "https://uai.edu.ar/",
   },
