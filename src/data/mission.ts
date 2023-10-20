@@ -8,13 +8,13 @@ const missionList: Mission[] = [
       'Así, pretendemos transformarnos en el instrumento para potenciar el futuro de personas que, de otra manera, su destino sería muy distinto.',
     ],
     imageUrl:
-      'public/assets/Recursos/PNG/hombre en contenedor.png',
+      'assets/Recursos/PNG/hombre en contenedor.png',
     position: 
       '1',
   },
   {
     title: 'Visión',
-    imageUrl: 'public/assets/Recursos/PNG/escalera diagonal.png',
+    imageUrl: 'assets/Recursos/PNG/escalera diagonal.png',
     paragraphs: [
       'Pretendemos ser reconocida nacionalmente como la institución, por excelencia, dedicada a crear oportunidades para personas de bajos recursos.',
     ],
@@ -22,7 +22,7 @@ const missionList: Mission[] = [
   },
   {
     title: 'Objetivo',
-    imageUrl: 'public/assets/Recursos/PNG/education-illustration.png',
+    imageUrl: 'assets/Recursos/PNG/education-illustration.png',
     paragraphs: [
       'La Fundación Oportunidades, en base a los objetivos de ayudar al crecimiento personal y profesional de personas de bajos recursos, tiene como principal campo de acción el otorgamiento de becas de estudio y estipendios mensuales, a alumnos que cuentan con buen rendimiento académico.',
       'La idea de trabajo es muy simple: otorgar becas de estudio a personas de bajos recursos y con buen rendimiento académico, para que puedan estudiar en universidades privadas del país. Es decir, la idea es darle oportunidades a aquellas personas que, de otra manera, no las tendrían.'
