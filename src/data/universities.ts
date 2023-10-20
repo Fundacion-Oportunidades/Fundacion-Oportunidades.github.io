@@ -3,7 +3,7 @@ import type { Universities } from "../types/types";
 const universities: Universities[] = [
   {
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/fundacion-oportunidades.appspot.com/o/Assets%2FLogos%20universidades%2FUAI-03.png?alt=media&token=0218a829-53b6-48fd-a14d-1a4ef1149e78",
+      "public/assets/Universidades/UAI-03.png",
     imageAlt: "Universidad Abierta Interamericana",
     url: "https://uai.edu.ar/",
   },

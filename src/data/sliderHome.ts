@@ -3,11 +3,11 @@ import type { ImageList } from "../types/types";
 const sliderList: ImageList[] = [
   {
     name: "Imposible 1",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/fundacion-oportunidades.appspot.com/o/Assets%2FRecursos%2FJPG%2F3.png?alt=media&token=8133b843-1451-4ecb-afd0-53e18668dda3&_gl=1*1jq4avb*_ga*MzU5MzA0NDAuMTY5NTkwMTE2OQ..*_ga_CW55HF8NVT*MTY5NTkwMTE3MC4xLjEuMTY5NTkwMjg2OC41NS4wLjA."
+    imageUrl: "public/assets/Recursos/JPG/3.png"
   },
   {
     name: "Imposible 2",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/fundacion-oportunidades.appspot.com/o/Assets%2FRecursos%2FJPG%2Flapiz%20imposible.png?alt=media&token=a2410f5c-ea18-4fe4-b89e-5cbe5a8e218b&_gl=1*iw0cnp*_ga*MzU5MzA0NDAuMTY5NTkwMTE2OQ..*_ga_CW55HF8NVT*MTY5NTkwMTE3MC4xLjEuMTY5NTkwMjg4OC4zNS4wLjA."
+    imageUrl: "public/assets/Recursos/JPG/lapiz imposible.png"
   },
   // {
   //   name: "Imposible 3",
