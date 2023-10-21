@@ -1,0 +1,28 @@
+name: Publish
+on:
+    # push:
+    #     tags:
+    #         - 'v*'  # Push events to matching v*, i.e. v1.0, v20.15.10
+    workflow_dispatch:
+        
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        environment:
+            name: production
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v3
+            - name: Setup node
+              uses: actions/setup-node@v3
+            - name: Build site for prod 
+              run: |
+                  npm run build:prod
+            - name: Install aws-cli
+              uses: unfor19/install-aws-cli-action@v1
+              with:
+                version: 2
+            - name: Publish site in S3 and invalidate CF
+              run: |
+                  aws s3 sync ./public s3://${{ secrets.AWS_S3_BUCKET }} --delete
+                  aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/*"
