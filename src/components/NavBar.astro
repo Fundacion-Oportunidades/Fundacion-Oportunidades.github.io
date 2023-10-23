@@ -16,22 +16,22 @@ interface Props extends MenuItem {}
 <header class="lg:flex items-center justify-around p-5 gap-5 mx-auto">
   <Astronav closeOnClick>
     <div class="flex w-full lg:w-auto justify-between">
-      <a href="/">
+      <a href="/" >
         <img
           src="/assets/Logos/PNG/isologotipoHorizontal.png"
           alt="logo fundación oportunidades"
-          class="h-12"
+          class="h-12 w-full max-sm:w-[75%] max-sm:h-auto"
         />
       </a>
       <div class="block lg:hidden">
         <MenuIcon class="w-4 h-4 text-gray-800" />
       </div>
     </div>
-    <MenuItems class="hidden lg:flex">
-      <ul class="flex flex-col lg:flex-row lg:gap-5">
+    <MenuItems class="hidden lg:flex max-sm:bg-[#f1f1f1] max-sm:py-5 max-sm:mt-3 max-sm:rounded ">
+      <ul class="flex flex-col lg:flex-row lg:gap-5 ">
         {
           menuItems.map((i) => (
-            <li>
+            <li class="contents max-sm:flex max-sm:justify-center">
               <Dropdown class="group">
                 <button class="flex items-center nav-main-option">
                   <span
