@@ -3,7 +3,7 @@ import formationPresentation from "../data/valuesFormationPresentation";
 ---
 {
   formationPresentation.map((p) => (
-      <div class="min-h-[70vh] w-[80%] mt-6 px-10">
+      <div class="min-h-[70vh] w-[80%] max-sm:w-[100%] lg:mt-6 px-10 max-sm:px-5">
         <div class="w-full">
           <div class="w-full text-center  ">
             <h1 class="text-4xl font-bold ">{p.title}</h1> 
@@ -17,8 +17,8 @@ import formationPresentation from "../data/valuesFormationPresentation";
         <div class="container mx-auto text-base space-y-1">
             <p>En Argentina existen 1298 municipios. En prácticamente todos ellos existe un colegio donde los jóvenes de cada pueblo o ciudad pueden asistir para recibir su educación primaria. Algunos de estos municipios no cuentan con establecimientos de educación secundaria. Y muchos de estos municipios no cuentan con establecimientos de educación superior o universitaria.</p>
             <p>Teniendo esto en consideración, y sumando que las condiciones económicas de gran parte de la población argentina no le permite a las familias enviar a sus hijos a una ciudad donde puedan estudiar carreras terciarias o licenciaturas, es que nace Fundación Oportunidades.</p>
-            <div class="w-full flex">
-              <div class="w-1/2">
+            <div class="w-full lg:flex  ">
+              <div class="w-1/2 max-sm:w-full">
                 <p>La fundación se crea para que aquellos/as jóvenes con buen rendimiento académico, bajos recursos económicos, y oriundos/as de todo el país puedan acceder a educación universitaria privada de manera gratuita.</p>  
                 <p>Lo que se pretende, entonces, es crear oportunidades, para que los jóvenes de nuestro país puedan cumplir sus sueños y estudiar las carreras que ellos/as eligen para su futuro.</p>
                 <p>Las becas que ofrecemos desde Fundación Oportunidades están otorgadas al 100% por la universidad que recibe al estudiante.Todas nuestras becas incluyen la cuota mensual de la casa de estudios.</p>
@@ -26,7 +26,7 @@ import formationPresentation from "../data/valuesFormationPresentation";
                 <p>Si querés saber qué carreras podemos becar, hacé <a href="/becas-disponibles" class="text-cyan-700">click acá</a>.</p>
                 <p>Si querés saber cómo solicitar una beca, hacé <a href="/como-solicitar-becas" class="text-cyan-700">click acá</a>.</p>
               </div>
-              <div class="w-1/2">
+              <div class="w-1/2 max-sm:w-full">
                 <img src={p.urlImage} alt={p.title}>  
               </div>
             </div>
