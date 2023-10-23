@@ -1,0 +1,42 @@
+name: Publish
+on:
+    workflow_dispatch:
+        
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        environment:
+            name: production
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v3
+            - name: Setup node
+              uses: actions/setup-node@v3
+            - name: Install dependencies
+              run: |
+                  npm install
+            - name: Build site for prod 
+              run: |
+                  npm run build:prod
+            - name: Install aws-cli
+              uses: unfor19/install-aws-cli-action@v1
+              with:
+                version: 2
+                verbose: false # default
+                arch: amd64    # allowed values: amd64, arm64
+                rootdir: ""    # defaults to "PWD"
+                workdir: ""    # defaults to "PWD/unfor19-awscli"
+            - name: Publish site in S3 and invalidate CF
+              env:
+                AWS_EC3_METADATA_DISABLED: true
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+                AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+                AWS_DISTRIBUTION_ID: ${{ secrets.AWS_DISTRIBUTION_ID }}
+              run: |
+                  aws s3 sync ./dist s3://${{ secrets.AWS_S3_BUCKET }} --delete
+                  aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/*"
+
+# Las variables están en el entorno de production, no se cargan como variables
+# También, tener en cuenta AWS_EC3_METADATA_DISABLED=true  https://github.com/aws/aws-cli/issues/5262#issuecomment-705832151
