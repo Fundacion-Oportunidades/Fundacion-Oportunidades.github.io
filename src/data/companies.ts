@@ -9,7 +9,7 @@ const companies: Companies[] = [
   },
   {
     imageUrl:
-      "/assets/microsoft.png",
+      "/assets/samsung.png",
     imageAlt: "Samsung Logo",
     url: "https://www.samsung.com/ar/",
   },
