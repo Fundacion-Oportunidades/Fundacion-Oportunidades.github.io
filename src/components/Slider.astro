@@ -5,7 +5,7 @@ const { list } = Astro.props;
 <section class="h-[auto] sliderClass w-full relative">
     <div class="relative">
         <div class="relative overflow-hidden">
-          <div class="flex animate-slide bg-gray-600 opacity-75 h-1/2">
+          <div class="flex  bg-gray-600 opacity-75 h-1/2"> <!-- Class slide -- "animate-slide"  -->
             {list.map((image: any) => (
                 <img src={image.imageUrl} alt={image.name} class="w-full " />
             ))}
