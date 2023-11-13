@@ -29,6 +29,14 @@ export interface Universities {
   imageUrl: string;
   imageAlt: string;
   url: string;
+  title: string;
+  carrers: Carrers[];
+}
+
+export interface Carrers {
+  name: string;
+  url: string;
+  description: string;
 }
 
 export interface SocialMediaTypes {

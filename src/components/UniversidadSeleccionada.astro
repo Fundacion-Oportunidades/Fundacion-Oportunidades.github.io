@@ -1,0 +1,11 @@
+---
+import universities from "../data/universities";
+const {universidad} = Astro.props
+const universidadSeleccionada = universities.find((uni) => uni.title === universidad);
+
+---
+{(universidadSeleccionada.carrers).map((carrer)=>( 
+    <a href={carrer.url} class="flex space-x-2" target="_blank">
+        <p class="text-lg max-sm:text-sm">{carrer.name} <span class="text-lg max-sm:text-sm italic text-[#48A750]">({carrer.description})</span> </p>
+    </a>
+))}

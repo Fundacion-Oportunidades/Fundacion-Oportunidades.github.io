@@ -6,7 +6,7 @@ interface Props extends Universities {}
 ---
 
 <section class="universities-container">
-  <div class="universidades-logos flex justify-center">
+  <div class="universidades-logos flex justify-center text-center">
     {
       universities.map((u) => (
         <a href={u.url} target="_blank">
@@ -34,7 +34,7 @@ interface Props extends Universities {}
   .universidades-logos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
   }
 

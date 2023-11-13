@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.0.4",
     "@astrojs/tailwind": "^4.0.0",
     "@fontsource/open-sauce-sans": "^5.0.5",
     "astro": "^2.7.4",

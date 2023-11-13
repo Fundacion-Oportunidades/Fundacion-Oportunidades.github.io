@@ -1,0 +1,17 @@
+---
+import universities from "../data/universities";
+---
+<section class="flex justify-center">
+    <ul class="flex space-x-4">
+        {
+            universities.map((universidad)=> (
+                <li class="flex justify-center items-center">
+                    <a href={`/becas/${universidad.title}`}>
+                        <img src={universidad.imageUrl} alt={universidad.title} class="w-[12vw] max-sm:w-[40vw]">
+                    </a>
+                </li>
+                )
+            )
+        }
+    </ul>
+</section>

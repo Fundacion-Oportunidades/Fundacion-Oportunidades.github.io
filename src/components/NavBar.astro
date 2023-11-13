@@ -13,7 +13,7 @@ import menuItems from "../data/menuItems";
 interface Props extends MenuItem {}
 ---
 
-<header class="lg:flex items-center justify-around p-5 gap-5 mx-auto">
+<header class="lg:flex items-center justify-around pt-5 gap-5 max-sm:pb-3 mx-auto flex-wrap">
   <Astronav closeOnClick>
     <div class="flex w-full lg:w-auto justify-between">
       <a href="/" >
@@ -79,16 +79,27 @@ interface Props extends MenuItem {}
       </ul>
     </MenuItems>
   </Astronav>
+  <div class="w-full bg-[#79CB78] h-[3vh] max-sm:h-[5vh]  " id="donationBanner">
+    <div class="flex justify-center items-center space-x-1 py-1">
+      <p>Realiza tu donación</p> <a target="_blank" href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848bbab262018bbf852bce030b" class="text-sky-700 italic">aca</a>
+    </div>
+  </div>
 </header>
 
 <style>
- header {
+#donationBanner {
+  display: block;
+  overflow: hidden;
+  transition: height 0.6s ease; 
+}
+#donationBanner.hidden {
+  height: 0vh;
+  overflow: hidden;
+}
+header {
     position: fixed; /* Establece el navbar como fijo */
     top: 0; /* Lo fija en la parte superior de la ventana */
     width: 100vw !important;
-    height: 10vh;
-    font-family: "Mrs.Eaves";
-    margin-bottom: 20px;
     background-color: rgba(239, 239, 239, 0.867);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     z-index: 2; /* Asegura que esté encima del contenido */
@@ -134,3 +145,17 @@ interface Props extends MenuItem {}
   @media only screen and (min-width: 768px) {
   }
 </style>
+
+<script>
+  const donationBanner = document.getElementById('donationBanner');
+  let lastScrollPosition = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.scrollY;
+    if (currentScrollPosition > lastScrollPosition) {
+      donationBanner.classList.add('hidden');
+    } else {
+      donationBanner.classList.remove('hidden');
+    }
+    lastScrollPosition = currentScrollPosition;
+  });
+</script>

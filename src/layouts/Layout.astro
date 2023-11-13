@@ -28,6 +28,9 @@ const { title } = Astro.props;
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sauce+Sans&display=swap"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -54,7 +57,7 @@ const { title } = Astro.props;
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <NavBar />
-    <main style="margin-top: 10vh" class="w-full ">
+    <main class="w-full max-sm:mt-[15vh] mt-[12vh] ">
       <slot />
     </main>
     <Footer />
@@ -79,4 +82,38 @@ const { title } = Astro.props;
     align-items: center;
     flex-direction: column;
   }
+  @font-face{
+    font-family: "Mrs.Eaves", Arial, sans-serif;
+    src:url('/fonts/mrs-eaves/MRSEAV~5.TTF');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face{
+    font-family: "OpenSauceSans", sans-serif;
+    src:url('/fonts/open-sauce/OpenSauceSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face{
+    font-family: "OpenSauceSansBold", bold, sans-serif;
+    src:url('/fonts/open-sauce/OpenSauceSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  body{
+    font-family: "Mrs.Eaves";
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', sans-serif ;
+  }
+  p, span, a, label, button{
+    font-family: "OpenSauceSans", sans-serif ;
+  }
+
+
 </style>
