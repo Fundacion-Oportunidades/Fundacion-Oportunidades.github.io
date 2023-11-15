@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import vercel from "@astrojs/vercel/serverless";
-
 import tailwind from "@astrojs/tailwind";
+import preact from "@astrojs/preact";
 const isDevelopment = process.env.NODE_ENV === "development";
 
 // https://astro.build/config
@@ -16,7 +16,7 @@ export default defineConfig({
   server: {
     port: 3050,
   },
-  integrations: [tailwind()],
+  integrations: [tailwind(), preact({ hooks: true })],
   jsxFactory: "h",
   output: "server",
   adapter: vercel(),
