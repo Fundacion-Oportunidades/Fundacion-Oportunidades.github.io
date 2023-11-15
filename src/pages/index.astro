@@ -8,6 +8,7 @@ import indexText from "../data/indexText";
 import Mission from "../components/Mission.astro";
 import Slider from "../components/Slider.astro";
 import sliderList from "../data/sliderHome";
+import Donation from "../components/Donation.astro";
 ---
 <Layout title="Fundacion Oportunidades">
   
@@ -53,14 +54,16 @@ import sliderList from "../data/sliderHome";
   
   <!-- Universidades Adheridas -->
   <section class="container mx-auto">
-    <h1 class="title px-5">Universidades adheridas</h1>
+    <h1 class="text-[2.3rem] font-bold px-5 max-sm:text-[1.5rem] max-sm:text-center">Universidades adheridas</h1>
     <hr class="division-line" />
     <Universities />
   </section>
   
+  <Donation/>
+
   <!-- <Universities /> -->
   <section class="container mx-auto">
-    <h1 class="title px-5">Quienes confían en nosotros</h1>
+    <h1 class="text-[2.3rem] font-bold px-5 max-sm:text-[1.5rem]  max-sm:text-center">Quienes confían en nosotros</h1>
     <hr class="division-line" />
     <Companies /> 
   </section>

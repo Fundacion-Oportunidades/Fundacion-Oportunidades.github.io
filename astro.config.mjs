@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel/serverless";
 
 import tailwind from "@astrojs/tailwind";
 const isDevelopment = process.env.NODE_ENV === "development";
@@ -17,4 +18,6 @@ export default defineConfig({
   },
   integrations: [tailwind()],
   jsxFactory: "h",
+  output: "server",
+  adapter: vercel(),
 });
