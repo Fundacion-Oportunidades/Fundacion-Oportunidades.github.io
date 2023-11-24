@@ -74,7 +74,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "Solicitá tu beca",
-    url: "/",
+    url: "/", //https://docs.google.com/forms/d/e/1FAIpQLSdP8Wf8dEGuHzAKKy_6jTs7qUbiwRyXdg_KWXR6jyJ16iXbUQ/viewform?usp=sf_link
     options:[]
   },
 ];

@@ -7,6 +7,7 @@ const universities: Universities[] = [
     imageAlt: "Universidad Abierta Interamericana",
     url: "/becas/uai",
     title: "uai",
+    description: "La UAI nos ofrece 1 beca del 100%, y becas ilimitadas con entre un 20 y 30% de descuento en la cuota, dependiendo la carrera elegida",
     carrers: [
       {
         name: "Licenciatura en Diseño de Interiores",
@@ -186,22 +187,10 @@ const universities: Universities[] = [
     imageAlt: "Logo Universidad de la Marina Mercante ",
     url: "/becas/udemm",
     title: "udemm",
+    description: "",
     carrers: []
 
-  },
-  // {
-  //   imageUrl:
-  //     "https://res.cloudinary.com/dsblswewr/image/upload/v1686690016/ucd_logo_rvflr9.png",
-  //   imageAlt: "Logo UCD",
-  //   url: "https://www.ucd.ie/",
-  // },
+  }
 ];
 
 export default universities;
-
-
-// {
-//   name: "",
-//   url: "",
-//   description:""
-// }

@@ -3,62 +3,69 @@ const { list } = Astro.props;
 ---
 
 <section class="h-[auto] sliderClass w-full relative max-sm:mt-3">
-    <div class="relative">
-        <div class="relative overflow-hidden">
-          <div class="flex  bg-gray-600 opacity-75 h-1/2"> <!-- Class slide -- "animate-slide"  -->
-            {list.map((image: any) => (
-                <img src={image.imageUrl} alt={image.name} class="w-full " />
-            ))}
-          </div>
-        </div>
-        <!-- <div class="absolute inset-0 bg-gray-300 opacity-50"></div>
+  <div class="relative">
+    <div class="relative overflow-hidden">
+      <div class="flex h-1/2 animate-slide">
+        <!-- Class slide -- "animate-slide"  -->
+        {
+          list.map((image: any) => (
+            <img
+              src={image.imageUrl}
+              alt={image.name}
+              class="w-[100vw]  "
+            />
+          ))
+        }
+      </div>
+    </div>
+    <!-- <div class="absolute inset-0 bg-gray-300 opacity-50"></div>
         <div class="absolute w-[30%] h-full top-2/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white text-center bg-[#EFEFEF] py-10 px-4">
             <div class="w-full h-full flex justify-center pt-[25%] items-start ">
                 <img src="./assets/Logos/PNG/isologotipo vertical.png" alt="Logo fundacion oportunidades">
             </div>
         </div> -->
-    </div>
+  </div>
 </section>
 
-    <style>
-    @keyframes slide {
+<style>
+  @keyframes slide {
     0% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
     /* 12.5% {
         transform: translateX(0);
     } */
     25% {
-        transform: translateX(0%);
+      transform: translateX(0vw);
     }
     /* 37.5% {
         transform: translateX(-100%);
     } */
     50% {
-        transform: translateX(-100%);
+      transform: translateX(-100vw);
     }
     /* 62.5% {
         transform: translateX(-200%);
     } */
     75% {
-        transform: translateX(-100%);
+      transform: translateX(-100vw);
     }
     /* 87.5% {
         transform: translateX(-300%);
     } */
     100% {
-        transform: translateX(0%);
+      transform: translateX(0vw);
     }
-    }
-    .sliderClass {
-        overflow: hidden;
-        height: auto; 
-        width: 100vw; 
-    }
+  }
+  .sliderClass {
+    overflow: hidden;
+    height: auto;
+    width: 100vw;
+  }
 
-    .animate-slide {
-        display: flex; 
-        animation: slide 8s linear infinite; 
-    }
-
-    </style>
+  .animate-slide {
+    display: flex;
+    width: 200vw;
+    animation: slide 12s linear infinite;
+  }
+</style>

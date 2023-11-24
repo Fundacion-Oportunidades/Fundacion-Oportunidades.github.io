@@ -13,10 +13,12 @@ import menuItems from "../data/menuItems";
 interface Props extends MenuItem {}
 ---
 
-<header class="lg:flex items-center justify-around py-5 gap-5 mx-auto flex-wrap">
+<header
+  class="lg:flex items-center justify-around py-5 gap-5 mx-auto flex-wrap"
+>
   <Astronav closeOnClick>
     <div class="flex w-full lg:w-auto justify-between px-3 items-center">
-      <a href="/" >
+      <a href="/">
         <img
           src="/assets/Logos/PNG/isologotipoHorizontal.png"
           alt="logo fundación oportunidades"
@@ -27,8 +29,10 @@ interface Props extends MenuItem {}
         <MenuIcon class="w-4 h-4 text-gray-800" />
       </div>
     </div>
-    <MenuItems class="hidden lg:flex max-sm:bg-[#f1f1f1] max-sm:py-5 max-sm:mt-3 max-sm:rounded ">
-      <ul class="flex flex-col lg:flex-row lg:gap-5 ">
+    <MenuItems
+      class="hidden lg:flex max-sm:bg-[#f1f1f1] max-sm:py-5 max-sm:mt-3 max-sm:rounded"
+    >
+      <ul class="flex flex-col lg:flex-row">
         {
           menuItems.map((i) => (
             <li class="contents max-sm:flex max-sm:justify-center">
@@ -41,10 +45,14 @@ interface Props extends MenuItem {}
                         : "py-2 px-4  text-black w-full transition ease-in duration-200 text-center text-base font-semibold"
                     }
                     id={
-                      i.title === "Solicitá tu beca" ? "solicita-tu-beca": "notDropdown"
+                      i.title === "Solicitá tu beca"
+                        ? "solicita-tu-beca"
+                        : "notDropdown"
                     }
                   >
-                    {(i.title === "Ingresa" || i.title === "Contacto" || i.title === "Solicitá tu beca" ) ? (
+                    {i.title === "Ingresa" ||
+                    i.title === "Contacto" ||
+                    i.title === "Solicitá tu beca" ? (
                       <a href={i.url}>{i.title}</a>
                     ) : (
                       i.title
@@ -87,23 +95,23 @@ interface Props extends MenuItem {}
 </header>
 
 <style>
-#donationBanner {
-  display: block;
-  overflow: hidden;
-  transition: height 0.6s ease; 
-}
-#donationBanner.hidden {
-  height: 0vh;
-  overflow: hidden;
-}
-header {
+  #donationBanner {
+    display: block;
+    overflow: hidden;
+    transition: height 0.6s ease;
+  }
+  #donationBanner.hidden {
+    height: 0vh;
+    overflow: hidden;
+  }
+  header {
     position: fixed; /* Establece el navbar como fijo */
     top: 0; /* Lo fija en la parte superior de la ventana */
     width: 100vw !important;
     background-color: rgba(239, 239, 239, 0.867);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     z-index: 2; /* Asegura que esté encima del contenido */
-}
+  }
 
   .nav-main-option {
     /* padding: 2px 10px 2px 10px; */
@@ -147,14 +155,14 @@ header {
 </style>
 
 <script>
-  const donationBanner = document.getElementById('donationBanner');
+  const donationBanner = document.getElementById("donationBanner");
   let lastScrollPosition = window.scrollY;
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     const currentScrollPosition = window.scrollY;
     if (currentScrollPosition > lastScrollPosition) {
-      donationBanner.classList.add('hidden');
+      donationBanner.classList.add("hidden");
     } else {
-      donationBanner.classList.remove('hidden');
+      donationBanner.classList.remove("hidden");
     }
     lastScrollPosition = currentScrollPosition;
   });

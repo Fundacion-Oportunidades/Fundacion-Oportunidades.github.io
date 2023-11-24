@@ -1,10 +1,10 @@
 import type { ImageList } from "../types/types";
 
 const sliderList: ImageList[] = [
-  // {
-  //   name: "Imposible 1",
-  //   imageUrl: "/assets/Recursos/JPG/3.png"
-  // },
+   {
+     name: "Apertura inscripciones",
+     imageUrl: "/assets/apertura-inscripcion.png"
+   },
    {
      name: "Imposible 2",
      imageUrl: "/assets/Recursos/JPG/lapiz imposible.png"

@@ -22,9 +22,7 @@ const { path } = Astro.params;
         <div class="division-line"></div>
         <BecasDisponibles />
         <div class="mt-5">
-          <div class="flex space-x-2">
-            <h1 class="text-2xl max-sm:text-lg font-bold my-4">Becas disponibles de la </h1><h1 class="text-2xl max-sm:text-lg font-bold my-4 uppercase">{path}</h1>
-          </div>
+          
           <UniversidadSeleccionada universidad={path} />
         </div>
     </div>

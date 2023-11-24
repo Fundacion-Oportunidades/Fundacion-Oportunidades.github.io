@@ -30,6 +30,7 @@ export interface Universities {
   imageAlt: string;
   url: string;
   title: string;
+  description:string;
   carrers: Carrers[];
 }
 
