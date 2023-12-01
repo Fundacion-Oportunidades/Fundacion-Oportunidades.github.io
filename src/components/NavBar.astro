@@ -53,7 +53,12 @@ interface Props extends MenuItem {}
                     {i.title === "Ingresa" ||
                     i.title === "Contacto" ||
                     i.title === "Solicitá tu beca" ? (
-                      <a href={i.url}>{i.title}</a>
+                      <a
+                        target={i.title === "Solicitá tu beca" ? "_blank" : ""}
+                        href={i.url}
+                      >
+                        {i.title}
+                      </a>
                     ) : (
                       i.title
                     )}
