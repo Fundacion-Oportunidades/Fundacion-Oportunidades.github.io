@@ -190,6 +190,57 @@ const universities: Universities[] = [
     description: "",
     carrers: []
 
+  },
+  {
+    imageUrl:
+      "/assets/Universidades/EAN.png",
+    imageAlt: "Logo Escuela Argentina de Negocios ",
+    url: "/becas/ean",
+    title: "ean",
+    description: "",
+    carrers: [
+      {
+      name: "Contador Público",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    },
+    {
+      name: "Licenciatura en Administración de Empresas",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    },
+    {
+      name: "Licenciatura en Administración de Negocios Internacionales",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    },
+    {
+      name: "Licenciatura en Administración de Negocios en Internet",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    },
+    {
+      name: "Licenciatura en Administración Hotelera",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    },
+    {
+      name: "Licenciatura en Comercialización",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    },
+    {
+      name: "Licenciatura en Dirección del Factor Humano",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    },
+    {
+      name: "Licenciatura en Tecnología Informática",
+      url: "https://www.ean.edu.ar/",
+      description:""
+    }
+  ]
+
   }
 ];
 
