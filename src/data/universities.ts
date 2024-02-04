@@ -188,7 +188,158 @@ const universities: Universities[] = [
     url: "/becas/udemm",
     title: "udemm",
     description: "",
-    carrers: []
+    carrers: [
+      {
+        name: "Abogacía",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Acompañante Terapéutico",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Asistente Psicopedagógico",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Contador Público",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Ingeniería Electromecánica",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Ingeniería Electrónica",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Ingeniería Industrial",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Ingeniería Mecánica",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Ingeniería en Sistemas",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Administración",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Administración de Recursos Humanos",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Administración de Sistemas",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Administración Naviera",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Ciencias de la Comunicación y Escritura Creativa",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Comercio Internacional",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Economía",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Gestión Ambiental",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Gestión del Transporte Ferroviario",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Higiene y Seguridad en el Trabajo",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Marketing",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Producción de Bioimágenes",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Psicología",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Psicopedagogía",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Relaciones Públicas",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Seguros",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Transportes y Logística Operativa",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Lic. en Turismo",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Martillero Público, Corredor y Administrador de Consorcios",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Tecnicatura en Radiología",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      },
+      {
+        name: "Tecnicatura Universitaria en Higiene y Seguridad",
+        url: "https://www.udemm.edu.ar/",
+        description:""
+      }
+  ]
 
   },
   {
