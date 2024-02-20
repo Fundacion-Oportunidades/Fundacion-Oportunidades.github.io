@@ -6,11 +6,13 @@ interface Props extends Universities {}
 ---
 
 <section class="universities-container">
-  <div class="universidades-logos flex justify-center text-center">
+  <div
+    class="universidades-logos flex justify-center max-sm:flex-wrap text-center"
+  >
     {
       universities.map((u) => (
         <a href={u.url} target="_blank">
-          <img src={u.imageUrl} alt={u.imageAlt} class="university-image" />
+          <img src={u.imageUrl} alt={u.imageAlt} class={`university-image `} />
         </a>
       ))
     }
