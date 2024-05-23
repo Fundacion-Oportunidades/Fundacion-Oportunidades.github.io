@@ -392,6 +392,151 @@ const universities: Universities[] = [
     }
   ]
 
+  },
+  {
+    imageUrl:
+      "/assets/Universidades/umai.png",
+    imageAlt: "Logo Universidad Maimonides ",
+    url: "/becas/umai",
+    title: "umai",
+    description: "",
+    carrers: [
+      {
+      name: "Bioquimica",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Ciencias Biológicas",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Enfermería",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Farmacia",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Instrumentación Quirúrgica - Ciclo (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Kinesiología y Fisiatría",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Medicina",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Nutrición",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Odontología",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Produccion de Bioimágenes",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Produccion de Bioimágenes - Ciclo",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Ciencias de la salud"
+    },
+    {
+      name: "Abogacía",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Actividad Fisica y Deporte - Ciclo (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Ciencia Política (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Educacion Física y Deporte",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Gerontología (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Gestión de Organizaciones de Salud - Ciclo (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Historia (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Musicoterapia",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Periodismo (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Profesorado Universitario",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Psicología",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Recursos Humanos",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Relaciones Internacionales (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Turismo y Conservación del Patrimonio (A Distancia)",
+      url: "https://www.maimonides.edu/",
+      description:"Facultad de Humanidades, ciencias sociales y empresariales"
+    },
+    {
+      name: "Tecnologia Multimedial",
+      url: "https://www.maimonides.edu/",
+      description:"Escuela de Comunicación y Diseño Multimedial"
+    },
+    {
+      name: "Tecnologia de Videojuegos y Diseño Interactivo",
+      url: "https://www.maimonides.edu/",
+      description:"Escuela de Comunicación y Diseño Multimedial"
+    },
+  ]
   }
 ];
 
