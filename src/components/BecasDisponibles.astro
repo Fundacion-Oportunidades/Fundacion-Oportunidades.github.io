@@ -2,16 +2,16 @@
 import universities from "../data/universities";
 ---
 
-<section class="flex justify-center">
-  <ul class="flex space-x-4">
+<section class="flex justify-center universities-container">
+  <ul class="flex space-x-4 universidades-logos">
     {
       universities.map((universidad) => (
         <li class="flex justify-center items-center">
-          <a href={`/becas/${universidad.title}`}>
+          <a href={`/becas/${universidad.title}`} class="university-link">
             <img
               src={universidad.imageUrl}
               alt={universidad.title}
-              class="w-[12vw] max-sm:w-[40vw]"
+              class="w-[12vw] max-sm:w-[40vw] university-image"
             />
           </a>
         </li>
@@ -19,3 +19,62 @@ import universities from "../data/universities";
     }
   </ul>
 </section>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sauce+Sans&display=swap");
+
+  a {
+    text-decoration: none;
+  }
+  .universities-container {
+    text-align: center;
+    padding: 1rem;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .universidades-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .university-link {
+    height: 150px;
+    overflow: hidden;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+  }
+
+  .university-link:hover {
+    border: 2px solid #a4a4a4;
+  }
+  .universidades-logos img {
+    padding: 1rem;
+    display: inline;
+    background-color: transparent;
+    transition: transform 0.3s;
+    aspect-ratio: 2/3;
+    object-fit: contain;
+    width: 200px;
+    height: 150px;
+  }
+
+  .universidades-logos img:hover {
+    opacity: 1;
+  }
+  @media screen and (max-width: 800px) {
+    .university-image {
+      height: 4rem;
+    }
+    .universities-text {
+      font-size: 1rem;
+    }
+  }
+</style>
