@@ -1,0 +1,25 @@
+---
+import benefactores from "../data/benefactores";
+const { path } = Astro.props;
+const benefactorSeleccionado = benefactores.find(
+  (benef) => benef.link === path
+);
+---
+
+<section>
+  <div class="w-full mb-4">
+    <h1 class="font-bold text-3xl mb-1">
+      {benefactorSeleccionado.name}
+    </h1>
+    <a
+      href={benefactorSeleccionado?.pageUrl}
+      class="text-blue-700"
+      target="_blank"
+    >
+      {benefactorSeleccionado?.pageUrl}
+    </a>
+  </div>
+  <div class="w-full space-y-3">
+    {benefactorSeleccionado?.description.map((des) => <p>{des.text}</p>)}
+  </div>
+</section>

@@ -1,0 +1,20 @@
+---
+import Benefactor from "./PersonBenef.astro";
+import benefactores from "../data/benefactores";
+---
+
+<div class="w-full">
+  <div class="w-full">
+    <h1 class="text-3xl font-bold">Consejo de Benefactores</h1>
+  </div>
+  <div class="container mx-auto">
+    <div class="division-line"></div>
+  </div>
+  <div class="container max-auto">
+    {
+      benefactores.map((benef) => (
+        <Benefactor imageUrl={benef.imageUrl} name={benef.name} link={benef.link}  />
+      ))
+    }
+  </div>
+</div>

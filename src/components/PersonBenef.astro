@@ -1,0 +1,50 @@
+---
+const { imageUrl, name, link } = Astro.props;
+---
+
+<div class="w-[15vw] my-5">
+  <a
+    href={"/benefactor/" + link}
+    class="imagen-link flex justify-center flex-wrap"
+  >
+    <div class="image-container flex justify-center items-center">
+      <img
+        src={imageUrl}
+        alt={name}
+        class="object-contain aspect-[2/3] image"
+      />
+    </div>
+    <div class="w-full mt-1 flex flex-wrap justify-center">
+      <h1 class="font-bold text-gray-500 text-xl">{name}</h1>
+      <p class="w-full text-center text-gray-400 font-bold">Benefactor</p>
+    </div>
+  </a>
+</div>
+
+<style>
+  .imagen-link {
+    border: 2px solid transparent;
+  }
+
+  .imagen-link:hover {
+    border: 2px solid #a4a4a4;
+    border-radius: 20px;
+  }
+
+  .image-container {
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 20vh;
+    border-radius: 9999px; /* Makes the container rounded */
+  }
+
+  .image {
+    object-fit: contain; /* Makes sure the image maintains its aspect ratio */
+    height: auto; /* Ensures the image covers the height of the container */
+    width: 100%;
+  }
+</style>

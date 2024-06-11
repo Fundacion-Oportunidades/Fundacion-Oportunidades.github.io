@@ -11,7 +11,7 @@ interface Props extends Universities {}
   >
     {
       universities.map((u) => (
-        <a href={u.url} target="_blank">
+        <a href={u.url} target="_blank" class="university-link">
           <img src={u.imageUrl} alt={u.imageAlt} class={`university-image `} />
         </a>
       ))
@@ -40,20 +40,31 @@ interface Props extends Universities {}
     flex-direction: row;
   }
 
+  .university-link {
+    height: 150px;
+    overflow: hidden;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .universidades-logos img {
-    margin: 1rem;
-    max-height: 6rem;
+    padding: 1rem;
     display: inline;
     background-color: transparent;
     transition: transform 0.3s;
     opacity: 0.8;
+    aspect-ratio: 2/3;
+    object-fit: contain;
+    width: 200px;
+    height: 150px;
   }
 
   .universidades-logos img:hover {
     opacity: 1;
     transform: scale(1.2, 1.2);
   }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 800px) {
     .university-image {
       height: 4rem;
     }

@@ -69,3 +69,16 @@ export interface ImageList {
   name: string;
   imageUrl: string;
 }
+
+export interface Benefactor {
+  name: string;
+  imageUrl: string;
+  pageUrl: string;
+  description: BenefactorDescription[];
+  link: string;
+}
+
+export interface BenefactorDescription {
+  title: string;
+  text: string;
+}

@@ -1,0 +1,138 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/\\/work_with_us_universities/",
+			"headers": {
+				"Location": "/work_with_us_universities"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/criterios-de-valoracion/",
+			"headers": {
+				"Location": "/criterios-de-valoracion"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/como-solicitar-becas/",
+			"headers": {
+				"Location": "/como-solicitar-becas"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/preguntas-frecuentes/",
+			"headers": {
+				"Location": "/preguntas-frecuentes"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/red-de-oportunidades/",
+			"headers": {
+				"Location": "/red-de-oportunidades"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/becas-de-formacion/",
+			"headers": {
+				"Location": "/becas-de-formacion"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/becas-disponibles/",
+			"headers": {
+				"Location": "/becas-disponibles"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/como-trabajamos/",
+			"headers": {
+				"Location": "/como-trabajamos"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/sobre-nosotros/",
+			"headers": {
+				"Location": "/sobre-nosotros"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/job_openings/",
+			"headers": {
+				"Location": "/job_openings"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/networking/",
+			"headers": {
+				"Location": "/networking"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/contacto/",
+			"headers": {
+				"Location": "/contacto"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/register/",
+			"headers": {
+				"Location": "/register"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/council/",
+			"headers": {
+				"Location": "/council"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/becas(?:\\/(.*?))?/",
+			"headers": {
+				"Location": "/becas/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/team/",
+			"headers": {
+				"Location": "/team"
+			},
+			"status": 308
+		},
+		{
+			"src": "/\\/404/",
+			"headers": {
+				"Location": "/404"
+			},
+			"status": 308
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "render"
+		}
+	]
+}

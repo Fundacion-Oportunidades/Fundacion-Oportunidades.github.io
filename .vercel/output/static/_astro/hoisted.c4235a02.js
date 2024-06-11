@@ -1,0 +1,1 @@
+import"./hoisted.2ae6790c.js";document.getElementById("mensajeExito");document.addEventListener("DOMContentLoaded",function(){document.getElementById("miFormulario").addEventListener("submit",function(e){e.preventDefault()})});

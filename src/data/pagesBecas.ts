@@ -27,6 +27,11 @@ const becasAside : MenuItem[] = [
         options: []
     },
     {
+        title: "Consejo de Benefactores",
+        url: "/consejo-de-benefactores",
+        options: []
+    },
+    {
         title: "Preguntas frecuentes",
         url: "/preguntas-frecuentes",
         options: []

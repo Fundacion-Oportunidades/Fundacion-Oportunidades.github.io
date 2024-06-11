@@ -44,6 +44,10 @@ const menuItems: MenuItem[] = [
         url: "/becas-disponibles",
       },
       {
+        title: "Consejo de Benefactores",
+        url: "/consejo-de-benefactores",
+      },
+      {
         title: "Preguntas frecuentes",
         url: "/preguntas-frecuentes",
       },
