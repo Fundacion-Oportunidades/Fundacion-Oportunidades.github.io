@@ -11,7 +11,7 @@ const becas: Becas[] = [
                 text: "Ser mujer"
             },
             {
-                title:"Que estudie, o que vincule: sociología o comunicación con tecnología ",
+                title:"Que estudie:",
                 text: [
                     {title: "", text: "Sociología"},
                     {title: "", text: "Lic. en Gestión de Tecnología Informática (UAI)"},
@@ -24,7 +24,7 @@ const becas: Becas[] = [
             },
             {
                 title: "",
-                text: "Estar interesada en: vincular la comunicación y la tecnología, y desarrollar tu carrera en este sector. aportar a la sociedad, o mejorar algo con impacto social."
+                text: "Estar interesada en vincular la comunicación y la tecnología, y desarrollar tu carrera en este sector. aportar a la sociedad, o mejorar algo con impacto social."
             },
             {
                 text: "",
@@ -38,7 +38,7 @@ const becas: Becas[] = [
             },
             {
                 title: "",
-                text: "Estipendio mensual de 800 usd (en pesos, al día de pago de factura)"
+                text: "Estipendio mensual de 640 dolares ,en pesos"
             },
             {
                 title: "",
@@ -56,7 +56,7 @@ const becas: Becas[] = [
             },
             {
                 title: "",
-                text: "2 cartas de recomendación: preferentemente, de 1 profesor/a y de autoridad del colegio"
+                text: "2 cartas de recomendación: preferentemente, de un profesor/a y de una autoridad del colegio"
             },
             {
                 title: "",
