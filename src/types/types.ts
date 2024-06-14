@@ -82,3 +82,18 @@ export interface BenefactorDescription {
   title: string;
   text: string;
 }
+
+export interface Becas {
+  name: string;
+  link: string;
+  req: ListText[];
+  benefits: ListText[];
+  other: ListText[];
+  imgUrl: string;
+}
+
+export interface ListText {
+  title: string;
+  text: string | ListText[];
+}
+

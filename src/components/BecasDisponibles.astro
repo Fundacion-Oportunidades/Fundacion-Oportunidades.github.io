@@ -1,23 +1,51 @@
 ---
 import universities from "../data/universities";
+import becas from "../data/becas.ts";
 ---
 
-<section class="flex justify-center universities-container">
-  <ul class="flex space-x-4 universidades-logos">
-    {
-      universities.map((universidad) => (
-        <li class="flex justify-center items-center">
-          <a href={`/becas/${universidad.title}`} class="university-link">
-            <img
-              src={universidad.imageUrl}
-              alt={universidad.title}
-              class="w-[12vw] max-sm:w-[40vw] university-image"
-            />
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<section class="flex justify-center universities-container flex-wrap">
+  <div class="w-full">
+    <h1>Universidades</h1>
+    <ul class="flex space-x-4 universidades-logos">
+      {
+        universities.map((universidad) => (
+          <li class="flex justify-center items-center">
+            <a href={`/becas/${universidad.title}`} class="university-link">
+              <img
+                src={universidad.imageUrl}
+                alt={universidad.title}
+                class="w-[12vw] max-sm:w-[40vw] university-image"
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class="w-full">
+    <h1>Becas de Benefactores</h1>
+    <ul class="flex space-x-4 universidades-logos">
+      {
+        becas.map((beca) => (
+          <li class="flex justify-center items-center">
+            <a href={`/becas/${beca.link}`} class="university-link">
+              {beca.imgUrl ? (
+                <img
+                  src={beca.imgUrl}
+                  alt={beca.name}
+                  class="w-[12vw] max-sm:w-[40vw] university-image"
+                />
+              ) : (
+                <div class="w-full flex justify-center items-center text-center">
+                  <h1 class="md:w-[80%]">{beca.name}</h1>
+                </div>
+              )}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </section>
 
 <style>
