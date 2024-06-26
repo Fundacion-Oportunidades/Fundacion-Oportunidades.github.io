@@ -1,7 +1,7 @@
 ---
 import becas from "../data/becas";
-const { path } = Astro.props;
-const becasSeleccionada = becas.find((beca) => beca.link === path);
+const { benefactor } = Astro.props;
+const becasSeleccionada = becas.find((beca) => beca.link === benefactor);
 ---
 
 <section>
