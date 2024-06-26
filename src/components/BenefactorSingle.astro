@@ -1,10 +1,9 @@
 ---
 import benefactores from "../data/benefactores";
-const { path } = Astro.props;
+const { benefactor } = Astro.props;
 const benefactorSeleccionado = benefactores.find(
-  (benef) => benef.link === path
+  (benef) => benef.link === benefactor
 );
-console.log(benefactorSeleccionado);
 ---
 
 <section>
