@@ -4,6 +4,7 @@ const { path } = Astro.props;
 const benefactorSeleccionado = benefactores.find(
   (benef) => benef.link === path
 );
+console.log(benefactorSeleccionado);
 ---
 
 <section>
