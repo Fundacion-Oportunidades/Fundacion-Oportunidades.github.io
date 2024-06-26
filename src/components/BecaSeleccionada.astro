@@ -6,7 +6,7 @@ const becasSeleccionada = becas.find((beca) => beca.link === path);
 
 <section>
   <div class="w-full">
-    <h1 class="text-2xl font-bold">{becasSeleccionada.name}</h1>
+    <h1 class="text-2xl font-bold">{becasSeleccionada?.name}</h1>
   </div>
   <div class="mt-3">
     <p>
@@ -18,7 +18,7 @@ const becasSeleccionada = becas.find((beca) => beca.link === path);
     <h1 class="font-bold">Requisitos:</h1>
     <ul>
       {
-        becasSeleccionada.req.map((req) => (
+        becasSeleccionada?.req.map((req) => (
           <li>
             <div
               class={`flex items-baseline ${Array.isArray(req.text) ? "flex flex-wrap" : ""}`}
@@ -46,7 +46,7 @@ const becasSeleccionada = becas.find((beca) => beca.link === path);
     <h1 class="font-bold">Requisitos (Fundación):</h1>
     <ul>
       {
-        becasSeleccionada.other.map((elemt) => (
+        becasSeleccionada?.other.map((elemt) => (
           <li>
             <h1>{elemt?.title}</h1>
             <p>{elemt?.text}</p>
@@ -60,7 +60,7 @@ const becasSeleccionada = becas.find((beca) => beca.link === path);
     <h1 class="font-bold">Beneficios:</h1>
     <ul>
       {
-        becasSeleccionada.benefits.map((benef) => (
+        becasSeleccionada?.benefits.map((benef) => (
           <li class="list-item">
             <h1>{benef?.title}</h1>
             <p>{benef?.text}</p>
