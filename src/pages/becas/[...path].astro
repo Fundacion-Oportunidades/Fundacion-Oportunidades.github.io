@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import BecasDisponibles from "../../components/BecasDisponibles.astro";
 import UniversidadSeleccionada from "../../components/UniversidadSeleccionada.astro";
 import BecaSeleccionada from "../../components/BecaSeleccionada.astro";
+export const prerender = true;
 
 export function getStaticPaths() {
   return [
@@ -22,8 +23,6 @@ const { path } = Astro.params;
   <section class="lg:flex">
     <AsideBecas />
     <div class="min-h-[30vh] w-[80%] max-sm:w-[100%] max-sm:px-4 mt-6 px-10">
-      <h1 class="text-4xl font-bold">Becas disponibles</h1>
-      <div class="division-line"></div>
       <BecasDisponibles />
       <div class="mt-5">
         {

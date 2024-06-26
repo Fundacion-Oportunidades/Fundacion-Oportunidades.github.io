@@ -5,8 +5,8 @@ import becas from "../data/becas.ts";
 
 <section class="flex justify-center universities-container flex-wrap">
   <div class="w-full">
-    <h1>Universidades</h1>
-    <ul class="flex space-x-4 universidades-logos">
+    <h1 class="text-3xl font-bold">Universidades en las que podes estudiar</h1>
+    <ul class="flex space-x-4 universidades-logos mt-3">
       {
         universities.map((universidad) => (
           <li class="flex justify-center items-center">
@@ -22,13 +22,19 @@ import becas from "../data/becas.ts";
       }
     </ul>
   </div>
-  <div class="w-full">
-    <h1>Becas de Benefactores</h1>
-    <ul class="flex space-x-4 universidades-logos">
+  <div class="w-[66%]">
+    <div class="division-line"></div>
+  </div>
+  <div class="w-full mt-5">
+    <h1 class="text-3xl font-bold">Becas Disponibles</h1>
+    <ul class="flex space-x-4 universidades-logos mt-3">
       {
         becas.map((beca) => (
           <li class="flex justify-center items-center">
-            <a href={`/becas/${beca.link}`} class="university-link">
+            <a
+              href={`/becas/${beca.link}`}
+              class=" border-gray-200 hover:border-gray-400 rounded border py-2 hover:bg-gray-100 "
+            >
               {beca.imgUrl ? (
                 <img
                   src={beca.imgUrl}

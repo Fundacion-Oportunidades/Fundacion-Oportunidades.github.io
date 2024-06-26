@@ -9,6 +9,10 @@ const menuItems: MenuItem[] = [
         title: "Sobre nosotros",
         url: "/sobre-nosotros",
       },
+      {
+        title: "Consejo de Benefactores",
+        url: "/consejo-de-benefactores",
+      }
       // {
       //   title: "Consejo asesor",
       //   url: "/council",
@@ -42,10 +46,6 @@ const menuItems: MenuItem[] = [
       {
         title: "Becas disponibles",
         url: "/becas-disponibles",
-      },
-      {
-        title: "Consejo de Benefactores",
-        url: "/consejo-de-benefactores",
       },
       {
         title: "Preguntas frecuentes",
