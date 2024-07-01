@@ -25,7 +25,7 @@ description: [
     },
     {
         title: "",
-        text: "Advisory Board de AI2030, iniciativa global para el uso responsable de la inteligencia artificial y tiene a su cargo el capítulo de público hispano de la iniciativa. ",
+        text: "Advisory Board de AI2030, iniciativa global para el uso responsable de la inteligencia artificial y busca acercar la iniciativa al público hispano.",
     },
     {
         title: "",
