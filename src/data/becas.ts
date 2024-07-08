@@ -24,7 +24,7 @@ const becas: Becas[] = [
             },
             {
                 title: "",
-                text: "Estar interesada en vincular la comunicación y la tecnología, y desarrollar tu carrera en este sector. aportar a la sociedad, o mejorar algo con impacto social."
+                text: "Estar interesada en vincular la comunicación y la tecnología, y desarrollar tu carrera en este sector."
             },
             {
                 text: "",
