@@ -11,9 +11,11 @@ const becas: Becas[] = [
                 text: "Ser mujer"
             },
             {
-                title:"Que estudie:",
+                title:"Estudiar alguna de las siguientes carreras ",
                 text: [
-                    {title: "", text: "Sociología"},
+                    {title: "", text: "Ingeniería en Sistemas Informáticos (UAI)"},
+                    {title: "", text: "Analista Programador (UAI)"},
+                    {title: "", text: "Lic. en Administración de Sistemas (UdeMM)"},
                     {title: "", text: "Lic. en Gestión de Tecnología Informática (UAI)"},
                     {title: "", text: "Ingeniería en Sistemas (UdeMM)"},
                     {title: "", text: "Lic. en Ciencias de la Comunicación y Escritura Creativa (UdeMM)"},
@@ -38,7 +40,7 @@ const becas: Becas[] = [
             },
             {
                 title: "",
-                text: "Estipendio mensual de 640 dolares ,en pesos"
+                text: "Estipendio económico mensual"
             },
             {
                 title: "",
