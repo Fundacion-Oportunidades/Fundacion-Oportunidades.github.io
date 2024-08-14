@@ -68,34 +68,47 @@ const becasSeleccionada = becas.find((beca) => beca.link === benefactor);
       }
     </ul>
   </div>
+  <div class="w-full max-sm:flex max-sm:justify-center max-sm:mt-4">
+    <button class="flex items-center justify-center nav-main-option">
+      <span
+        class="login-button py-2 px-5 bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+      >
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdP8Wf8dEGuHzAKKy_6jTs7qUbiwRyXdg_KWXR6jyJ16iXbUQ/viewform?usp=sf_link"
+        >
+          Solicitá tu beca
+        </a>
+      </span>
+    </button>
+  </div>
+
+  <style>
+    ul {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 0em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+      unicode-bidi: isolate;
+    }
+
+    #special-ul {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      list-style-type: square;
+    }
+
+    li::marker {
+      color: #48a750;
+      font-size: x-large;
+    }
+
+    p {
+      font-family: "Libre Baskerville", sans-serif;
+    }
+  </style>
 </section>
-
-<style>
-  ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 0em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-  }
-
-  #special-ul {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    list-style-type: square;
-  }
-
-  li::marker {
-    color: #48a750;
-    font-size: x-large;
-  }
-
-  p {
-    font-family: "Libre Baskerville", sans-serif;
-  }
-</style>
