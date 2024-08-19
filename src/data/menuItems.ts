@@ -12,6 +12,10 @@ const menuItems: MenuItem[] = [
       {
         title: "Consejo de Benefactores",
         url: "/consejo-de-benefactores",
+      },
+      {
+        title: "Red de Oportunidades",
+        url: "/red-de-oportunidades",
       }
       // {
       //   title: "Consejo asesor",
@@ -51,24 +55,6 @@ const menuItems: MenuItem[] = [
         title: "Preguntas frecuentes",
         url: "/preguntas-frecuentes",
       },
-    ],
-  },
-  {
-    title: "Red de Oportunidades",
-    url: "",
-    options: [
-      {
-        title: "Presentación",
-        url: "/red-de-oportunidades",
-      },
-      // {
-      //   title: "Networking",
-      //   url: "/networking",
-      // },
-      // {
-      //   title: "Ofertas laborales",
-      //   url: "/job_openings",
-      // },
     ],
   },
   {
