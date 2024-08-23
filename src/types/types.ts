@@ -68,6 +68,7 @@ export interface WorkerCard {
 export interface ImageList {
   name: string;
   imageUrl: string;
+  link: string;
 }
 
 export interface Benefactor {

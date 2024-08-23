@@ -5,16 +5,23 @@ const { list } = Astro.props;
 <section class="h-[auto] sliderClass w-full relative max-sm:mt-3">
   <div class="relative">
     <div class="relative overflow-hidden">
-      <div class="flex h-1/2 "> 
+      <div class="flex h-1/2 animate-slide">
         <!-- Class slide -- "animate-slide"  -->
         {
-          list.map((image: any) => (
-            <img
-              src={image.imageUrl}
-              alt={image.name}
-              class="w-[100vw]  "
-            />
-          ))
+          list.map((image: any) =>
+            image.link ? (
+              <a href={image.link} key={image.name}>
+                <img src={image.imageUrl} alt={image.name} class="w-[100vw]" />
+              </a>
+            ) : (
+              <img
+                src={image.imageUrl}
+                alt={image.name}
+                class="w-[100vw]"
+                key={image.name}
+              />
+            )
+          )
         }
       </div>
     </div>
