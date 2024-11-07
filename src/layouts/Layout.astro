@@ -1,6 +1,7 @@
 ---
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
+import FixedButton from "../components/FixedButton.astro";
 
 import "@fontsource/open-sauce-sans";
 import OfferHead from "../components/OfferHead.astro";
@@ -75,6 +76,7 @@ const { title } = Astro.props;
     >
     <!-- End Google Tag Manager (noscript) -->
     <NavBar />
+    <FixedButton/>
     <main class="w-full max-sm:mt-[12vh] mt-[10vh]">
       <slot />
     </main>
