@@ -12,6 +12,12 @@ const companies: Companies[] = [
       "/assets/Empresas/scalabl.png",
     imageAlt: "Scalabl logo",
     url: "https://www.scalabl.com/",
+  },
+  {
+    imageUrl:
+      "/assets/Benefactores/proaice.png",
+    imageAlt: "Beca ProAICE",
+    url: "",
   }
 ];
 
