@@ -71,38 +71,10 @@ const becas: Becas[] = [
         link: "/",
         imgUrl: "/assets/Benefactores/proaice.png",
         req: [
-            // {
-            //     title: "",
-            //     text: "Ser mujer"
-            // },
-            // {
-            //     title:"Estudiar alguna de las siguientes carreras ",
-            //     text: [
-            //         {title: "", text: "Ingeniería en Sistemas Informáticos (UAI)"},
-            //         {title: "", text: "Analista Programador (UAI)"},
-            //         {title: "", text: "Lic. en Administración de Sistemas (UdeMM)"},
-            //         {title: "", text: "Lic. en Gestión de Tecnología Informática (UAI)"},
-            //         {title: "", text: "Ingeniería en Sistemas (UdeMM)"},
-            //         {title: "", text: "Lic. en Ciencias de la Comunicación y Escritura Creativa (UdeMM)"},
-            //         {title: "", text: "Lic. en Administración de Negocios en Internet (EAN)"},
-            //         {title: "", text: "Lic. en Tecnología Informática (EAN)"},
-
-            //     ]
-            // },
-            // {
-            //     title: "",
-            //     text: "Estar interesada en vincular la comunicación y la tecnología, y desarrollar tu carrera en este sector."
-            // },
-            // {
-            //     text: "",
-            //     title: "Ser oriunda de Argentina"
-            // }
         ],
         benefits: [
-           
         ],
         other: [
-           
         ]
     }
 ]
