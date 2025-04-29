@@ -17,7 +17,7 @@ const companies: Companies[] = [
     imageUrl:
       "/assets/Benefactores/proaice.png",
     imageAlt: "Beca ProAICE",
-    url: "",
+    url: "https://pro-aice.org.ar/",
   }
 ];
 
